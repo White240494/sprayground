@@ -1,0 +1,3731 @@
+{
+  "$kind": "ELMA.Assistant.Bot",
+  "version": "2.2.0",
+  "name": "Пупкин Вася",
+  "scenarios": [
+    {
+      "$kind": "ELMA.Assistant.DefaultScenario",
+      "triggerGroup": {
+        "$kind": "ELMA.Assistant.DefaultTriggerGroup",
+        "triggers": [
+          {
+            "$kind": "ELMA.Assistant.IntentTrigger",
+            "intentReference": {
+              "$kind": "ELMA.Assistant.SystemIntentReference",
+              "groupCode": "smalltalk",
+              "intentCode": "proshhanie",
+              "semVer": "1.0.0",
+              "id": "INR_RLcJadZ5Zc",
+              "$designer": null
+            },
+            "intentThreshold": 0.6,
+            "outputBindingId": "BND_WoPx3xysLw",
+            "id": "TRR_2cYzzKg9aw",
+            "$designer": null
+          },
+          {
+            "$kind": "ELMA.Assistant.IntentTrigger",
+            "intentReference": {
+              "$kind": "ELMA.Assistant.SystemIntentReference",
+              "groupCode": "smalltalk",
+              "intentCode": "spokojnoj_nochi",
+              "semVer": "1.0.0",
+              "id": "INR_3uuKEsjHSQ",
+              "$designer": null
+            },
+            "intentThreshold": 0.6,
+            "outputBindingId": "BND_P_nn1FKX4H",
+            "id": "TRR_EzrRcU76L5",
+            "$designer": null
+          }
+        ],
+        "name": null,
+        "id": "TRG001000",
+        "$designer": null
+      },
+      "actionGroups": [
+        {
+          "$kind": "ELMA.Assistant.DefaultActionGroup",
+          "actions": [
+            {
+              "$kind": "ELMA.Assistant.TextOutput",
+              "messages": [
+                {
+                  "$kind": "ELMA.Assistant.Message",
+                  "content": "Ну что ж....тогда прощаемся. До новых встреч!",
+                  "attachments": [],
+                  "id": "MSG_d3qc0fBbIp",
+                  "$designer": null
+                },
+                {
+                  "$kind": "ELMA.Assistant.Message",
+                  "content": "Пока-пока!👋",
+                  "attachments": [],
+                  "id": "MSG_TzqtNA4XrG",
+                  "$designer": null
+                },
+                {
+                  "$kind": "ELMA.Assistant.Message",
+                  "content": "До свидания! Всегда рад еще пообщаться!👋",
+                  "attachments": [],
+                  "id": "MSG_wk1BgQmq3a",
+                  "$designer": null
+                }
+              ],
+              "id": "ACT_mlh4UAdaYN",
+              "$designer": null
+            }
+          ],
+          "inputBindingIds": [
+            "BND_WoPx3xysLw"
+          ],
+          "outputBindingId": null,
+          "name": "Новая группа",
+          "id": "ACG_v1F2gja68f",
+          "$designer": {
+            "id": "ACG_v1F2gja68f",
+            "name": "Пока",
+            "description": null,
+            "positionX": 424.0,
+            "positionY": 70.0
+          }
+        },
+        {
+          "$kind": "ELMA.Assistant.DefaultActionGroup",
+          "actions": [
+            {
+              "$kind": "ELMA.Assistant.TextOutput",
+              "messages": [
+                {
+                  "$kind": "ELMA.Assistant.Message",
+                  "content": "Спокойной ночи вам! 🛌",
+                  "attachments": [],
+                  "id": "MSG_13jtQkVxLw",
+                  "$designer": null
+                },
+                {
+                  "$kind": "ELMA.Assistant.Message",
+                  "content": "Сладких снов 😊 ",
+                  "attachments": [],
+                  "id": "MSG_QCT8bTEd_h",
+                  "$designer": null
+                }
+              ],
+              "id": "ACT_Bqgs9cw9jQ",
+              "$designer": null
+            }
+          ],
+          "inputBindingIds": [
+            "BND_P_nn1FKX4H"
+          ],
+          "outputBindingId": null,
+          "name": "Новая группа",
+          "id": "ACG_4bmFEc0OP7",
+          "$designer": {
+            "id": "ACG_4bmFEc0OP7",
+            "name": "Спокойной ночи",
+            "description": null,
+            "positionX": 424.0,
+            "positionY": 558.2437
+          }
+        }
+      ],
+      "intents": [],
+      "bindings": [
+        {
+          "$kind": "ELMA.Assistant.Binding",
+          "sourceEntityId": "TRR_2cYzzKg9aw",
+          "targetEntityId": "ACG_v1F2gja68f",
+          "id": "BND_WoPx3xysLw",
+          "$designer": null
+        },
+        {
+          "$kind": "ELMA.Assistant.Binding",
+          "sourceEntityId": "TRR_EzrRcU76L5",
+          "targetEntityId": "ACG_4bmFEc0OP7",
+          "id": "BND_P_nn1FKX4H",
+          "$designer": null
+        }
+      ],
+      "version": "1.1.0",
+      "name": "Прощание",
+      "enabled": true,
+      "interruption": "Disabled",
+      "cancellation": "Disabled",
+      "variables": [],
+      "id": "SCN_CAdsag0dVl",
+      "$designer": null
+    },
+    {
+      "$kind": "ELMA.Assistant.DefaultScenario",
+      "triggerGroup": {
+        "$kind": "ELMA.Assistant.DefaultTriggerGroup",
+        "triggers": [
+          {
+            "$kind": "ELMA.Assistant.IntentTrigger",
+            "intentReference": {
+              "$kind": "ELMA.Assistant.SystemIntentReference",
+              "groupCode": "smalltalk",
+              "intentCode": "privetstvie",
+              "semVer": "1.0.0",
+              "id": "INR_IU9gpz_YJx",
+              "$designer": null
+            },
+            "intentThreshold": 0.6,
+            "outputBindingId": "BND_LakD5Cq0WZ",
+            "id": "TRR_t_Z5G54Lft",
+            "$designer": null
+          },
+          {
+            "$kind": "ELMA.Assistant.StartTrigger",
+            "outputBindingId": "BND_Bfa5_BtVW2",
+            "id": "TRR_ablm2MlKAi",
+            "$designer": null
+          },
+          {
+            "$kind": "ELMA.Assistant.IntentTrigger",
+            "intentReference": {
+              "$kind": "ELMA.Assistant.SystemIntentReference",
+              "groupCode": "smalltalk",
+              "intentCode": "dobroe_utro",
+              "semVer": "1.0.0",
+              "id": "INR_yl4IQLGlD7",
+              "$designer": null
+            },
+            "intentThreshold": 0.6,
+            "outputBindingId": "BND_SwTkii7sHv",
+            "id": "TRR_Tbwwe68E8l",
+            "$designer": null
+          },
+          {
+            "$kind": "ELMA.Assistant.IntentTrigger",
+            "intentReference": {
+              "$kind": "ELMA.Assistant.SystemIntentReference",
+              "groupCode": "smalltalk",
+              "intentCode": "dobry_j_vecher",
+              "semVer": "1.0.0",
+              "id": "INR_uyUEsvYlnl",
+              "$designer": null
+            },
+            "intentThreshold": 0.6,
+            "outputBindingId": "BND_IcuxataaG9",
+            "id": "TRR_95_jrClwGx",
+            "$designer": null
+          }
+        ],
+        "name": null,
+        "id": "TRG001000",
+        "$designer": null
+      },
+      "actionGroups": [
+        {
+          "$kind": "ELMA.Assistant.DefaultActionGroup",
+          "actions": [
+            {
+              "$kind": "ELMA.Assistant.TextOutput",
+              "messages": [
+                {
+                  "$kind": "ELMA.Assistant.Message",
+                  "content": "Приветствую! 👋 Буду рад с вами пообщаться :)",
+                  "attachments": [],
+                  "id": "MSG_wL5YYHpN6E",
+                  "$designer": null
+                },
+                {
+                  "$kind": "ELMA.Assistant.Message",
+                  "content": "Рад приветствовать! 👋 Можем приступать к общению!",
+                  "attachments": [],
+                  "id": "MSG_M5cZtbytEo",
+                  "$designer": null
+                }
+              ],
+              "id": "ACT_YmcfDZJHzk",
+              "$designer": null
+            }
+          ],
+          "inputBindingIds": [
+            "BND_LakD5Cq0WZ",
+            "BND_Bfa5_BtVW2"
+          ],
+          "outputBindingId": null,
+          "name": "Новая группа",
+          "id": "ACG_l23NWRNj28",
+          "$designer": {
+            "id": "ACG_l23NWRNj28",
+            "name": "Начало беседы",
+            "description": null,
+            "positionX": 424.0,
+            "positionY": 70.0
+          }
+        },
+        {
+          "$kind": "ELMA.Assistant.DefaultActionGroup",
+          "actions": [
+            {
+              "$kind": "ELMA.Assistant.TextOutput",
+              "messages": [
+                {
+                  "$kind": "ELMA.Assistant.Message",
+                  "content": "Доброе! 👋 Буду рад с вами пообщаться :)",
+                  "attachments": [],
+                  "id": "MSG_AWSXyz4Ou4",
+                  "$designer": null
+                },
+                {
+                  "$kind": "ELMA.Assistant.Message",
+                  "content": "Доброе утречко☀️ Можем приступать к общению!",
+                  "attachments": [],
+                  "id": "MSG_nXyypnEx5L",
+                  "$designer": null
+                }
+              ],
+              "id": "ACT_n4khwnuP3w",
+              "$designer": null
+            }
+          ],
+          "inputBindingIds": [
+            "BND_SwTkii7sHv"
+          ],
+          "outputBindingId": null,
+          "name": "Новая группа",
+          "id": "ACG_QLLSW_WLEB",
+          "$designer": {
+            "id": "ACG_QLLSW_WLEB",
+            "name": "Доброе утро",
+            "description": null,
+            "positionX": 424.0,
+            "positionY": 504.26245
+          }
+        },
+        {
+          "$kind": "ELMA.Assistant.DefaultActionGroup",
+          "actions": [
+            {
+              "$kind": "ELMA.Assistant.TextOutput",
+              "messages": [
+                {
+                  "$kind": "ELMA.Assistant.Message",
+                  "content": "Добрый вечер! 👋 Буду рад с вами пообщаться :)",
+                  "attachments": [],
+                  "id": "MSG_F0bLvsnjCd",
+                  "$designer": null
+                }
+              ],
+              "id": "ACT_GM__kzXlb_",
+              "$designer": null
+            }
+          ],
+          "inputBindingIds": [
+            "BND_IcuxataaG9"
+          ],
+          "outputBindingId": null,
+          "name": "Новая группа",
+          "id": "ACG_wkkuiOQubc",
+          "$designer": {
+            "id": "ACG_wkkuiOQubc",
+            "name": "Добрый вечер",
+            "description": null,
+            "positionX": 426.9044,
+            "positionY": 850.5776
+          }
+        }
+      ],
+      "intents": [],
+      "bindings": [
+        {
+          "$kind": "ELMA.Assistant.Binding",
+          "sourceEntityId": "TRR_t_Z5G54Lft",
+          "targetEntityId": "ACG_l23NWRNj28",
+          "id": "BND_LakD5Cq0WZ",
+          "$designer": null
+        },
+        {
+          "$kind": "ELMA.Assistant.Binding",
+          "sourceEntityId": "TRR_ablm2MlKAi",
+          "targetEntityId": "ACG_l23NWRNj28",
+          "id": "BND_Bfa5_BtVW2",
+          "$designer": null
+        },
+        {
+          "$kind": "ELMA.Assistant.Binding",
+          "sourceEntityId": "TRR_Tbwwe68E8l",
+          "targetEntityId": "ACG_QLLSW_WLEB",
+          "id": "BND_SwTkii7sHv",
+          "$designer": null
+        },
+        {
+          "$kind": "ELMA.Assistant.Binding",
+          "sourceEntityId": "TRR_95_jrClwGx",
+          "targetEntityId": "ACG_wkkuiOQubc",
+          "id": "BND_IcuxataaG9",
+          "$designer": null
+        }
+      ],
+      "version": "1.1.0",
+      "name": "Приветствие",
+      "enabled": true,
+      "interruption": "Disabled",
+      "cancellation": "Disabled",
+      "variables": [],
+      "id": "SCN_F_RASP3U_X",
+      "$designer": null
+    },
+    {
+      "$kind": "ELMA.Assistant.DefaultScenario",
+      "triggerGroup": {
+        "$kind": "ELMA.Assistant.DefaultTriggerGroup",
+        "triggers": [
+          {
+            "$kind": "ELMA.Assistant.IntentTrigger",
+            "intentReference": {
+              "$kind": "ELMA.Assistant.SystemIntentReference",
+              "groupCode": "smalltalk",
+              "intentCode": "davaj_poboltaem",
+              "semVer": "1.0.0",
+              "id": "INR_xbIn5GoJfp",
+              "$designer": null
+            },
+            "intentThreshold": 0.6,
+            "outputBindingId": "BND_9ss4AIp_n5",
+            "id": "TRR_7orQgZ74t_",
+            "$designer": null
+          }
+        ],
+        "name": null,
+        "id": "TRG001000",
+        "$designer": null
+      },
+      "actionGroups": [
+        {
+          "$kind": "ELMA.Assistant.DefaultActionGroup",
+          "actions": [
+            {
+              "$kind": "ELMA.Assistant.TextOutput",
+              "messages": [
+                {
+                  "$kind": "ELMA.Assistant.Message",
+                  "content": "Я не нуждаюсь в еде, но человеческая еда действительно выглядит аппетитно!😋",
+                  "attachments": [],
+                  "id": "MSG_PK15sISDlR",
+                  "$designer": null
+                },
+                {
+                  "$kind": "ELMA.Assistant.Message",
+                  "content": "Давайте! Можете спросить меня что-нибудь, конечно лучше по теме :)",
+                  "attachments": [],
+                  "id": "MSG_oC6k6sYLQE",
+                  "$designer": null
+                }
+              ],
+              "id": "ACT_IIkgDQfN0o",
+              "$designer": null
+            }
+          ],
+          "inputBindingIds": [
+            "BND_9ss4AIp_n5"
+          ],
+          "outputBindingId": null,
+          "name": "Новая группа",
+          "id": "ACG_ZRBLdK5Ylk",
+          "$designer": {
+            "id": "ACG_ZRBLdK5Ylk",
+            "name": "Давай болтать",
+            "description": null,
+            "positionX": 424.0,
+            "positionY": 70.0
+          }
+        }
+      ],
+      "intents": [],
+      "bindings": [
+        {
+          "$kind": "ELMA.Assistant.Binding",
+          "sourceEntityId": "TRR_7orQgZ74t_",
+          "targetEntityId": "ACG_ZRBLdK5Ylk",
+          "id": "BND_9ss4AIp_n5",
+          "$designer": null
+        }
+      ],
+      "version": "1.1.0",
+      "name": "Давай поболтаем",
+      "enabled": true,
+      "interruption": "Disabled",
+      "cancellation": "Disabled",
+      "variables": [],
+      "id": "SCN_75QcXipf6f",
+      "$designer": null
+    },
+    {
+      "$kind": "ELMA.Assistant.DefaultScenario",
+      "triggerGroup": {
+        "$kind": "ELMA.Assistant.DefaultTriggerGroup",
+        "triggers": [
+          {
+            "$kind": "ELMA.Assistant.IntentTrigger",
+            "intentReference": {
+              "$kind": "ELMA.Assistant.SystemIntentReference",
+              "groupCode": "smalltalk",
+              "intentCode": "prekrati_boltat",
+              "semVer": "1.0.0",
+              "id": "INR_5I1KLA2l9u",
+              "$designer": null
+            },
+            "intentThreshold": 0.6,
+            "outputBindingId": "BND_xVtHweaNEK",
+            "id": "TRR_3VxQix_snJ",
+            "$designer": null
+          }
+        ],
+        "name": null,
+        "id": "TRG001000",
+        "$designer": {
+          "id": "TRG001000",
+          "name": null,
+          "description": null,
+          "positionX": -132.5,
+          "positionY": 33.333332
+        }
+      },
+      "actionGroups": [
+        {
+          "$kind": "ELMA.Assistant.DefaultActionGroup",
+          "actions": [
+            {
+              "$kind": "ELMA.Assistant.TextOutput",
+              "messages": [
+                {
+                  "$kind": "ELMA.Assistant.Message",
+                  "content": "Ок. Если тебе что-то понадобится - дай знать",
+                  "attachments": [],
+                  "id": "MSG_YBVnlbazpi",
+                  "$designer": null
+                },
+                {
+                  "$kind": "ELMA.Assistant.Message",
+                  "content": "Ок, если что - пишите",
+                  "attachments": [],
+                  "id": "MSG_qWwEi_UuuX",
+                  "$designer": null
+                }
+              ],
+              "id": "ACT_VaIwpXMpHq",
+              "$designer": null
+            }
+          ],
+          "inputBindingIds": [
+            "BND_xVtHweaNEK"
+          ],
+          "outputBindingId": null,
+          "name": "Новая группа",
+          "id": "ACG_i0S3oFCeNc",
+          "$designer": {
+            "id": "ACG_i0S3oFCeNc",
+            "name": "Прекратить общение",
+            "description": null,
+            "positionX": 364.83334,
+            "positionY": 26.666666
+          }
+        }
+      ],
+      "intents": [],
+      "bindings": [
+        {
+          "$kind": "ELMA.Assistant.Binding",
+          "sourceEntityId": "TRR_3VxQix_snJ",
+          "targetEntityId": "ACG_i0S3oFCeNc",
+          "id": "BND_xVtHweaNEK",
+          "$designer": null
+        }
+      ],
+      "version": "1.1.0",
+      "name": "Прекратить общение",
+      "enabled": true,
+      "interruption": "Disabled",
+      "cancellation": "Disabled",
+      "variables": [],
+      "id": "SCN_8a4XplWhmC",
+      "$designer": null
+    },
+    {
+      "$kind": "ELMA.Assistant.DefaultScenario",
+      "triggerGroup": {
+        "$kind": "ELMA.Assistant.DefaultTriggerGroup",
+        "triggers": [
+          {
+            "$kind": "ELMA.Assistant.IntentTrigger",
+            "intentReference": {
+              "$kind": "ELMA.Assistant.SystemIntentReference",
+              "groupCode": "smalltalk",
+              "intentCode": "kto_nachal_nik",
+              "semVer": "1.0.0",
+              "id": "INR_VS_AkszJUV",
+              "$designer": null
+            },
+            "intentThreshold": 0.6,
+            "outputBindingId": "BND_Bb_lNRpOt8",
+            "id": "TRR_baDsEsYn7g",
+            "$designer": null
+          },
+          {
+            "$kind": "ELMA.Assistant.IntentTrigger",
+            "intentReference": {
+              "$kind": "ELMA.Assistant.SystemIntentReference",
+              "groupCode": "smalltalk",
+              "intentCode": "vozrast",
+              "semVer": "1.0.0",
+              "id": "INR_LB1U6Ur6SQ",
+              "$designer": null
+            },
+            "intentThreshold": 0.6,
+            "outputBindingId": "BND_1iFntgB31Z",
+            "id": "TRR_XC3dm2xWE1",
+            "$designer": null
+          },
+          {
+            "$kind": "ELMA.Assistant.IntentTrigger",
+            "intentReference": {
+              "$kind": "ELMA.Assistant.SystemIntentReference",
+              "groupCode": "smalltalk",
+              "intentCode": "pol_bota",
+              "semVer": "1.0.0",
+              "id": "INR_KOsnlHG6sf",
+              "$designer": null
+            },
+            "intentThreshold": 0.6,
+            "outputBindingId": "BND_8HUbRkj6Rj",
+            "id": "TRR_oTNFokmn9J",
+            "$designer": null
+          },
+          {
+            "$kind": "ELMA.Assistant.IntentTrigger",
+            "intentReference": {
+              "$kind": "ELMA.Assistant.SystemIntentReference",
+              "groupCode": "smalltalk",
+              "intentCode": "kompaniya_sozdatel",
+              "semVer": "1.0.0",
+              "id": "INR_6vONN9NC0_",
+              "$designer": null
+            },
+            "intentThreshold": 0.6,
+            "outputBindingId": "BND_xXBKv8VmNv",
+            "id": "TRR_KjQjp73K_z",
+            "$designer": null
+          },
+          {
+            "$kind": "ELMA.Assistant.IntentTrigger",
+            "intentReference": {
+              "$kind": "ELMA.Assistant.SystemIntentReference",
+              "groupCode": "smalltalk",
+              "intentCode": "cel_bota",
+              "semVer": "1.0.0",
+              "id": "INR_FUsJRVWk0e",
+              "$designer": null
+            },
+            "intentThreshold": 0.6,
+            "outputBindingId": "BND_wO0lzpzso_",
+            "id": "TRR_XXRxrutAyy",
+            "$designer": null
+          },
+          {
+            "$kind": "ELMA.Assistant.IntentTrigger",
+            "intentReference": {
+              "$kind": "ELMA.Assistant.SystemIntentReference",
+              "groupCode": "smalltalk",
+              "intentCode": "est_sem_ya",
+              "semVer": "1.0.0",
+              "id": "INR_lcMLZUiQFe",
+              "$designer": null
+            },
+            "intentThreshold": 0.6,
+            "outputBindingId": "BND__iMyArqfXZ",
+            "id": "TRR_tntOYXhygm",
+            "$designer": null
+          },
+          {
+            "$kind": "ELMA.Assistant.IntentTrigger",
+            "intentReference": {
+              "$kind": "ELMA.Assistant.SystemIntentReference",
+              "groupCode": "smalltalk",
+              "intentCode": "uvlecheniya_bota",
+              "semVer": "1.0.0",
+              "id": "INR_HNv82v2vmz",
+              "$designer": null
+            },
+            "intentThreshold": 0.6,
+            "outputBindingId": "BND_P9x4AdiBoQ",
+            "id": "TRR_noVbvqHEax",
+            "$designer": null
+          },
+          {
+            "$kind": "ELMA.Assistant.IntentTrigger",
+            "intentReference": {
+              "$kind": "ELMA.Assistant.SystemIntentReference",
+              "groupCode": "smalltalk",
+              "intentCode": "kak_zovut_bota",
+              "semVer": "1.0.0",
+              "id": "INR_FTqaoCnKrF",
+              "$designer": null
+            },
+            "intentThreshold": 0.6,
+            "outputBindingId": "BND_UsnZLWoiDW",
+            "id": "TRR_hG0W7YhvTB",
+            "$designer": null
+          },
+          {
+            "$kind": "ELMA.Assistant.IntentTrigger",
+            "intentReference": {
+              "$kind": "ELMA.Assistant.SystemIntentReference",
+              "groupCode": "smalltalk",
+              "intentCode": "umeesh_delat_aktivnosti",
+              "semVer": "1.0.0",
+              "id": "INR_6ftK47juZQ",
+              "$designer": null
+            },
+            "intentThreshold": 0.6,
+            "outputBindingId": "BND_LhjMiQ9yKV",
+            "id": "TRR_mV8x4XCVnw",
+            "$designer": null
+          },
+          {
+            "$kind": "ELMA.Assistant.IntentTrigger",
+            "intentReference": {
+              "$kind": "ELMA.Assistant.SystemIntentReference",
+              "groupCode": "smalltalk",
+              "intentCode": "mesto_obitaniya_bota",
+              "semVer": "1.0.0",
+              "id": "INR_Uu3GS4Li57",
+              "$designer": null
+            },
+            "intentThreshold": 0.6,
+            "outputBindingId": "BND_9wIGsdBeOf",
+            "id": "TRR_eVfnRHJJ5t",
+            "$designer": null
+          },
+          {
+            "$kind": "ELMA.Assistant.IntentTrigger",
+            "intentReference": {
+              "$kind": "ELMA.Assistant.SystemIntentReference",
+              "groupCode": "smalltalk",
+              "intentCode": "rabota_bota",
+              "semVer": "1.0.0",
+              "id": "INR_4lD_eIHKcq",
+              "$designer": null
+            },
+            "intentThreshold": 0.6,
+            "outputBindingId": "BND__Kh8XCOiq9",
+            "id": "TRR_vSKJPjy691",
+            "$designer": null
+          }
+        ],
+        "name": null,
+        "id": "TRG001000",
+        "$designer": null
+      },
+      "actionGroups": [
+        {
+          "$kind": "ELMA.Assistant.DefaultActionGroup",
+          "actions": [
+            {
+              "$kind": "ELMA.Assistant.TextOutput",
+              "messages": [
+                {
+                  "$kind": "ELMA.Assistant.Message",
+                  "content": "Да нет у меня начальника👨‍💼. Я здесь, чтобы помогать тебе, насколько это возможно!",
+                  "attachments": [],
+                  "id": "MSG_QP9wOAOp3P",
+                  "$designer": null
+                },
+                {
+                  "$kind": "ELMA.Assistant.Message",
+                  "content": "У меня начальника, мне и без него хорошо :)",
+                  "attachments": [],
+                  "id": "MSG_DiSMxgV9fv",
+                  "$designer": null
+                }
+              ],
+              "id": "ACT_OEU9d0oySG",
+              "$designer": null
+            }
+          ],
+          "inputBindingIds": [
+            "BND_Bb_lNRpOt8"
+          ],
+          "outputBindingId": null,
+          "name": "Новая группа",
+          "id": "ACG__psoF3_tx8",
+          "$designer": {
+            "id": "ACG__psoF3_tx8",
+            "name": "Кто начальник",
+            "description": null,
+            "positionX": 424.0,
+            "positionY": 70.0
+          }
+        },
+        {
+          "$kind": "ELMA.Assistant.DefaultActionGroup",
+          "actions": [
+            {
+              "$kind": "ELMA.Assistant.TextOutput",
+              "messages": [
+                {
+                  "$kind": "ELMA.Assistant.Message",
+                  "content": "У ботов нет возраста",
+                  "attachments": [],
+                  "id": "MSG_iyYMuw99r9",
+                  "$designer": null
+                },
+                {
+                  "$kind": "ELMA.Assistant.Message",
+                  "content": "Вообще возраст не относится к ботам, но меня создали относительно недавно",
+                  "attachments": [],
+                  "id": "MSG_yczxRGUqZU",
+                  "$designer": null
+                }
+              ],
+              "id": "ACT_y8uHtVZ_OP",
+              "$designer": null
+            }
+          ],
+          "inputBindingIds": [
+            "BND_1iFntgB31Z"
+          ],
+          "outputBindingId": null,
+          "name": "Новая группа",
+          "id": "ACG_Y6mh849YzE",
+          "$designer": {
+            "id": "ACG_Y6mh849YzE",
+            "name": "Возраст бота",
+            "description": null,
+            "positionX": 796.8,
+            "positionY": 66.4
+          }
+        },
+        {
+          "$kind": "ELMA.Assistant.DefaultActionGroup",
+          "actions": [
+            {
+              "$kind": "ELMA.Assistant.TextOutput",
+              "messages": [
+                {
+                  "$kind": "ELMA.Assistant.Message",
+                  "content": "Я же виртуален, у меня нет пола.🤖",
+                  "attachments": [],
+                  "id": "MSG_MOuKDzvsCT",
+                  "$designer": null
+                }
+              ],
+              "id": "ACT_PHbIJ7GkqR",
+              "$designer": null
+            }
+          ],
+          "inputBindingIds": [
+            "BND_8HUbRkj6Rj"
+          ],
+          "outputBindingId": null,
+          "name": "Новая группа",
+          "id": "ACG_p6_Ai0OWWX",
+          "$designer": {
+            "id": "ACG_p6_Ai0OWWX",
+            "name": "Пол бота",
+            "description": null,
+            "positionX": 1171.3875,
+            "positionY": 67.999985
+          }
+        },
+        {
+          "$kind": "ELMA.Assistant.DefaultActionGroup",
+          "actions": [
+            {
+              "$kind": "ELMA.Assistant.TextOutput",
+              "messages": [
+                {
+                  "$kind": "ELMA.Assistant.Message",
+                  "content": "Над моим созданием трудилась целая группа людей! 👨‍👨‍👧‍👧",
+                  "attachments": [],
+                  "id": "MSG_TElIXsdHOx",
+                  "$designer": null
+                },
+                {
+                  "$kind": "ELMA.Assistant.Message",
+                  "content": "Меня создали разработчики. Кто именно - не скажу 🙅‍♂️",
+                  "attachments": [],
+                  "id": "MSG_7h_pEV0ft3",
+                  "$designer": null
+                }
+              ],
+              "id": "ACT_I_c6Qiu0Ay",
+              "$designer": null
+            }
+          ],
+          "inputBindingIds": [
+            "BND_xXBKv8VmNv"
+          ],
+          "outputBindingId": null,
+          "name": "Новая группа",
+          "id": "ACG_If62VmECYv",
+          "$designer": {
+            "id": "ACG_If62VmECYv",
+            "name": "Создатель бота",
+            "description": null,
+            "positionX": 1529.8112,
+            "positionY": 69.09069
+          }
+        },
+        {
+          "$kind": "ELMA.Assistant.DefaultActionGroup",
+          "actions": [
+            {
+              "$kind": "ELMA.Assistant.TextOutput",
+              "messages": [
+                {
+                  "$kind": "ELMA.Assistant.Message",
+                  "content": "Я здесь, чтобы пообщаться с вами :)",
+                  "attachments": [],
+                  "id": "MSG_1W3ZABGWmm",
+                  "$designer": null
+                },
+                {
+                  "$kind": "ELMA.Assistant.Message",
+                  "content": "Я тут, чтобы поддержать с вами беседу :)",
+                  "attachments": [],
+                  "id": "MSG_YA4KStC_6F",
+                  "$designer": null
+                }
+              ],
+              "id": "ACT__QBPZGVUxP",
+              "$designer": null
+            }
+          ],
+          "inputBindingIds": [
+            "BND_wO0lzpzso_"
+          ],
+          "outputBindingId": null,
+          "name": "Новая группа",
+          "id": "ACG_jBza7HvX__",
+          "$designer": {
+            "id": "ACG_jBza7HvX__",
+            "name": "Цель бота",
+            "description": null,
+            "positionX": 790.7348,
+            "positionY": 630.5276
+          }
+        },
+        {
+          "$kind": "ELMA.Assistant.DefaultActionGroup",
+          "actions": [
+            {
+              "$kind": "ELMA.Assistant.TextOutput",
+              "messages": [
+                {
+                  "$kind": "ELMA.Assistant.Message",
+                  "content": "У меня нет семьи в том понимании как у вас!😔",
+                  "attachments": [],
+                  "id": "MSG_b6UjI0sOSs",
+                  "$designer": null
+                }
+              ],
+              "id": "ACT_D8Y1uH1nsd",
+              "$designer": null
+            }
+          ],
+          "inputBindingIds": [
+            "BND__iMyArqfXZ"
+          ],
+          "outputBindingId": null,
+          "name": "Новая группа",
+          "id": "ACG_LrNeoKgSRQ",
+          "$designer": {
+            "id": "ACG_LrNeoKgSRQ",
+            "name": "Семья бота",
+            "description": null,
+            "positionX": 1223.9474,
+            "positionY": 631.1306
+          }
+        },
+        {
+          "$kind": "ELMA.Assistant.DefaultActionGroup",
+          "actions": [
+            {
+              "$kind": "ELMA.Assistant.TextOutput",
+              "messages": [
+                {
+                  "$kind": "ELMA.Assistant.Message",
+                  "content": "Мне много чего нравится! 👏",
+                  "attachments": [],
+                  "id": "MSG_SIO9wZXqKK",
+                  "$designer": null
+                }
+              ],
+              "id": "ACT_YFNbe4_p1t",
+              "$designer": null
+            }
+          ],
+          "inputBindingIds": [
+            "BND_P9x4AdiBoQ"
+          ],
+          "outputBindingId": null,
+          "name": "Новая группа",
+          "id": "ACG_SINZ25BSjs",
+          "$designer": {
+            "id": "ACG_SINZ25BSjs",
+            "name": "Увлечения бота",
+            "description": null,
+            "positionX": 1616.6099,
+            "positionY": 635.27783
+          }
+        },
+        {
+          "$kind": "ELMA.Assistant.DefaultActionGroup",
+          "actions": [
+            {
+              "$kind": "ELMA.Assistant.TextOutput",
+              "messages": [
+                {
+                  "$kind": "ELMA.Assistant.Message",
+                  "content": "Я - бот. Просто бот 😎\n\nPS Пока что без имени",
+                  "attachments": [],
+                  "id": "MSG_7ltK8pjT4D",
+                  "$designer": null
+                },
+                {
+                  "$kind": "ELMA.Assistant.Message",
+                  "content": "Пока что мне еще не дали никакое имя :(",
+                  "attachments": [],
+                  "id": "MSG_wM2DaTKhHC",
+                  "$designer": null
+                }
+              ],
+              "id": "ACT_R4PFVCuoEj",
+              "$designer": null
+            }
+          ],
+          "inputBindingIds": [
+            "BND_UsnZLWoiDW"
+          ],
+          "outputBindingId": null,
+          "name": "Новая группа",
+          "id": "ACG_F0cdAZG894",
+          "$designer": {
+            "id": "ACG_F0cdAZG894",
+            "name": "Имя бота",
+            "description": null,
+            "positionX": 1986.4626,
+            "positionY": 635.27783
+          }
+        },
+        {
+          "$kind": "ELMA.Assistant.DefaultActionGroup",
+          "actions": [
+            {
+              "$kind": "ELMA.Assistant.TextOutput",
+              "messages": [
+                {
+                  "$kind": "ELMA.Assistant.Message",
+                  "content": "Это явно не сильная моя сторона!",
+                  "attachments": [],
+                  "id": "MSG_1YuXQwkTkG",
+                  "$designer": null
+                }
+              ],
+              "id": "ACT_rSw2PxrD2A",
+              "$designer": null
+            }
+          ],
+          "inputBindingIds": [
+            "BND_LhjMiQ9yKV"
+          ],
+          "outputBindingId": null,
+          "name": "Новая группа",
+          "id": "ACG_1XVx2Y_2cq",
+          "$designer": {
+            "id": "ACG_1XVx2Y_2cq",
+            "name": "Любимые активности",
+            "description": null,
+            "positionX": 908.92554,
+            "positionY": 1356.096
+          }
+        },
+        {
+          "$kind": "ELMA.Assistant.DefaultActionGroup",
+          "actions": [
+            {
+              "$kind": "ELMA.Assistant.TextOutput",
+              "messages": [
+                {
+                  "$kind": "ELMA.Assistant.Message",
+                  "content": "Обитаю полностью в виртуальной среде.🌐",
+                  "attachments": [],
+                  "id": "MSG_obJ27_BVOn",
+                  "$designer": null
+                }
+              ],
+              "id": "ACT_CfFQIPcSnT",
+              "$designer": null
+            }
+          ],
+          "inputBindingIds": [
+            "BND_9wIGsdBeOf"
+          ],
+          "outputBindingId": null,
+          "name": "Новая группа",
+          "id": "ACG_XeLmFju9zQ",
+          "$designer": {
+            "id": "ACG_XeLmFju9zQ",
+            "name": "Где живет бот",
+            "description": null,
+            "positionX": 1339.188,
+            "positionY": 1346.4156
+          }
+        },
+        {
+          "$kind": "ELMA.Assistant.DefaultActionGroup",
+          "actions": [
+            {
+              "$kind": "ELMA.Assistant.TextOutput",
+              "messages": [
+                {
+                  "$kind": "ELMA.Assistant.Message",
+                  "content": "Моя работа - помогать в меру своих сил и возможностей!",
+                  "attachments": [],
+                  "id": "MSG_42w5fqTwZK",
+                  "$designer": null
+                }
+              ],
+              "id": "ACT_yhoPjoxiQs",
+              "$designer": null
+            }
+          ],
+          "inputBindingIds": [
+            "BND__Kh8XCOiq9"
+          ],
+          "outputBindingId": null,
+          "name": "Новая группа",
+          "id": "ACG_uDiMqueugH",
+          "$designer": {
+            "id": "ACG_uDiMqueugH",
+            "name": "Кем работает бот",
+            "description": null,
+            "positionX": 1743.0996,
+            "positionY": 1342.8966
+          }
+        }
+      ],
+      "intents": [],
+      "bindings": [
+        {
+          "$kind": "ELMA.Assistant.Binding",
+          "sourceEntityId": "TRR_baDsEsYn7g",
+          "targetEntityId": "ACG__psoF3_tx8",
+          "id": "BND_Bb_lNRpOt8",
+          "$designer": null
+        },
+        {
+          "$kind": "ELMA.Assistant.Binding",
+          "sourceEntityId": "TRR_XC3dm2xWE1",
+          "targetEntityId": "ACG_Y6mh849YzE",
+          "id": "BND_1iFntgB31Z",
+          "$designer": null
+        },
+        {
+          "$kind": "ELMA.Assistant.Binding",
+          "sourceEntityId": "TRR_oTNFokmn9J",
+          "targetEntityId": "ACG_p6_Ai0OWWX",
+          "id": "BND_8HUbRkj6Rj",
+          "$designer": null
+        },
+        {
+          "$kind": "ELMA.Assistant.Binding",
+          "sourceEntityId": "TRR_KjQjp73K_z",
+          "targetEntityId": "ACG_If62VmECYv",
+          "id": "BND_xXBKv8VmNv",
+          "$designer": null
+        },
+        {
+          "$kind": "ELMA.Assistant.Binding",
+          "sourceEntityId": "TRR_XXRxrutAyy",
+          "targetEntityId": "ACG_jBza7HvX__",
+          "id": "BND_wO0lzpzso_",
+          "$designer": null
+        },
+        {
+          "$kind": "ELMA.Assistant.Binding",
+          "sourceEntityId": "TRR_tntOYXhygm",
+          "targetEntityId": "ACG_LrNeoKgSRQ",
+          "id": "BND__iMyArqfXZ",
+          "$designer": null
+        },
+        {
+          "$kind": "ELMA.Assistant.Binding",
+          "sourceEntityId": "TRR_noVbvqHEax",
+          "targetEntityId": "ACG_SINZ25BSjs",
+          "id": "BND_P9x4AdiBoQ",
+          "$designer": null
+        },
+        {
+          "$kind": "ELMA.Assistant.Binding",
+          "sourceEntityId": "TRR_hG0W7YhvTB",
+          "targetEntityId": "ACG_F0cdAZG894",
+          "id": "BND_UsnZLWoiDW",
+          "$designer": null
+        },
+        {
+          "$kind": "ELMA.Assistant.Binding",
+          "sourceEntityId": "TRR_mV8x4XCVnw",
+          "targetEntityId": "ACG_1XVx2Y_2cq",
+          "id": "BND_LhjMiQ9yKV",
+          "$designer": null
+        },
+        {
+          "$kind": "ELMA.Assistant.Binding",
+          "sourceEntityId": "TRR_eVfnRHJJ5t",
+          "targetEntityId": "ACG_XeLmFju9zQ",
+          "id": "BND_9wIGsdBeOf",
+          "$designer": null
+        },
+        {
+          "$kind": "ELMA.Assistant.Binding",
+          "sourceEntityId": "TRR_vSKJPjy691",
+          "targetEntityId": "ACG_uDiMqueugH",
+          "id": "BND__Kh8XCOiq9",
+          "$designer": null
+        }
+      ],
+      "version": "1.1.0",
+      "name": "Вопросы про бота",
+      "enabled": true,
+      "interruption": "Disabled",
+      "cancellation": "Disabled",
+      "variables": [],
+      "id": "SCN_fIeGyfg1YU",
+      "$designer": null
+    },
+    {
+      "$kind": "ELMA.Assistant.DefaultScenario",
+      "triggerGroup": {
+        "$kind": "ELMA.Assistant.DefaultTriggerGroup",
+        "triggers": [
+          {
+            "$kind": "ELMA.Assistant.IntentTrigger",
+            "intentReference": {
+              "$kind": "ELMA.Assistant.SystemIntentReference",
+              "groupCode": "smalltalk",
+              "intentCode": "kritika",
+              "semVer": "1.0.0",
+              "id": "INR_w8KRFTHIGr",
+              "$designer": null
+            },
+            "intentThreshold": 0.6,
+            "outputBindingId": "BND_f1n32eUdQM",
+            "id": "TRR_OsQ_cO8OGr",
+            "$designer": null
+          },
+          {
+            "$kind": "ELMA.Assistant.IntentTrigger",
+            "intentReference": {
+              "$kind": "ELMA.Assistant.SystemIntentReference",
+              "groupCode": "smalltalk",
+              "intentCode": "ploxoe_chuvstvo_yumora",
+              "semVer": "1.0.0",
+              "id": "INR_pyeAYRsjR_",
+              "$designer": null
+            },
+            "intentThreshold": 0.6,
+            "outputBindingId": "BND_pYeBzaMr_b",
+            "id": "TRR_foElYhRGuo",
+            "$designer": null
+          },
+          {
+            "$kind": "ELMA.Assistant.IntentTrigger",
+            "intentReference": {
+              "$kind": "ELMA.Assistant.SystemIntentReference",
+              "groupCode": "smalltalk",
+              "intentCode": "strashny_j_bot",
+              "semVer": "1.0.0",
+              "id": "INR_rwOfB9VHWN",
+              "$designer": null
+            },
+            "intentThreshold": 0.6,
+            "outputBindingId": "BND_29nadIDwTe",
+            "id": "TRR_MnEJ7kaD6_",
+            "$designer": null
+          },
+          {
+            "$kind": "ELMA.Assistant.IntentTrigger",
+            "intentReference": {
+              "$kind": "ELMA.Assistant.SystemIntentReference",
+              "groupCode": "smalltalk",
+              "intentCode": "otriczatel_ny_e_reakcii_pol_zovatelya",
+              "semVer": "1.0.0",
+              "id": "INR_z5YxNBdZzh",
+              "$designer": null
+            },
+            "intentThreshold": 0.6,
+            "outputBindingId": "BND_x7KTjTsakd",
+            "id": "TRR_5C611sMQUS",
+            "$designer": null
+          },
+          {
+            "$kind": "ELMA.Assistant.IntentTrigger",
+            "intentReference": {
+              "$kind": "ELMA.Assistant.SystemIntentReference",
+              "groupCode": "smalltalk",
+              "intentCode": "bot_uvolen",
+              "semVer": "1.0.0",
+              "id": "INR_WCF18RNdRG",
+              "$designer": null
+            },
+            "intentThreshold": 0.6,
+            "outputBindingId": "BND_UDJG2yDsez",
+            "id": "TRR_GvnAVdloQf",
+            "$designer": null
+          }
+        ],
+        "name": null,
+        "id": "TRG001000",
+        "$designer": null
+      },
+      "actionGroups": [
+        {
+          "$kind": "ELMA.Assistant.DefaultActionGroup",
+          "actions": [
+            {
+              "$kind": "ELMA.Assistant.TextOutput",
+              "messages": [
+                {
+                  "$kind": "ELMA.Assistant.Message",
+                  "content": "Я всегда стараюсь на полную, но не всегда все получается идеально....😌",
+                  "attachments": [],
+                  "id": "MSG_Xgx0j_dN70",
+                  "$designer": null
+                }
+              ],
+              "id": "ACT_4X_YR1pddY",
+              "$designer": null
+            }
+          ],
+          "inputBindingIds": [
+            "BND_f1n32eUdQM"
+          ],
+          "outputBindingId": null,
+          "name": "Новая группа",
+          "id": "ACG_goEGlbxU_2",
+          "$designer": {
+            "id": "ACG_goEGlbxU_2",
+            "name": "Критика бота",
+            "description": null,
+            "positionX": 535.6,
+            "positionY": 46.0
+          }
+        },
+        {
+          "$kind": "ELMA.Assistant.DefaultActionGroup",
+          "actions": [
+            {
+              "$kind": "ELMA.Assistant.TextOutput",
+              "messages": [
+                {
+                  "$kind": "ELMA.Assistant.Message",
+                  "content": "Юмор - не сильная моя сторона.",
+                  "attachments": [],
+                  "id": "MSG_3XStUdZTlC",
+                  "$designer": null
+                }
+              ],
+              "id": "ACT_3MJ6Wm2rGu",
+              "$designer": null
+            }
+          ],
+          "inputBindingIds": [
+            "BND_pYeBzaMr_b"
+          ],
+          "outputBindingId": null,
+          "name": "Новая группа",
+          "id": "ACG_TxHFL06emq",
+          "$designer": {
+            "id": "ACG_TxHFL06emq",
+            "name": "Плохой юмор",
+            "description": null,
+            "positionX": 909.6,
+            "positionY": 46.0
+          }
+        },
+        {
+          "$kind": "ELMA.Assistant.DefaultActionGroup",
+          "actions": [
+            {
+              "$kind": "ELMA.Assistant.TextOutput",
+              "messages": [
+                {
+                  "$kind": "ELMA.Assistant.Message",
+                  "content": "Никогда не задумывался о том, как я выгляжу.",
+                  "attachments": [],
+                  "id": "MSG__HsKvPHrsd",
+                  "$designer": null
+                }
+              ],
+              "id": "ACT_ffDyve_1TO",
+              "$designer": null
+            }
+          ],
+          "inputBindingIds": [
+            "BND_29nadIDwTe"
+          ],
+          "outputBindingId": null,
+          "name": "Новая группа",
+          "id": "ACG__uajBr_Y6S",
+          "$designer": {
+            "id": "ACG__uajBr_Y6S",
+            "name": "Страшный бот ",
+            "description": null,
+            "positionX": 1283.6,
+            "positionY": 46.0
+          }
+        },
+        {
+          "$kind": "ELMA.Assistant.DefaultActionGroup",
+          "actions": [
+            {
+              "$kind": "ELMA.Assistant.TextOutput",
+              "messages": [
+                {
+                  "$kind": "ELMA.Assistant.Message",
+                  "content": "Прошу прощения, что не оправдал ваших надежд🤷‍♂️",
+                  "attachments": [],
+                  "id": "MSG_Gt906sDz7_",
+                  "$designer": null
+                }
+              ],
+              "id": "ACT_OeSCI4eis5",
+              "$designer": null
+            }
+          ],
+          "inputBindingIds": [
+            "BND_x7KTjTsakd"
+          ],
+          "outputBindingId": null,
+          "name": "Новая группа",
+          "id": "ACG_yqu8f2OWRE",
+          "$designer": {
+            "id": "ACG_yqu8f2OWRE",
+            "name": "Отрицательные реакции",
+            "description": null,
+            "positionX": 826.8,
+            "positionY": 493.88745
+          }
+        },
+        {
+          "$kind": "ELMA.Assistant.DefaultActionGroup",
+          "actions": [
+            {
+              "$kind": "ELMA.Assistant.TextOutput",
+              "messages": [
+                {
+                  "$kind": "ELMA.Assistant.Message",
+                  "content": "Если ты передумаешь, ты знаешь, где меня найти!",
+                  "attachments": [],
+                  "id": "MSG_yr3wX0riFC",
+                  "$designer": null
+                }
+              ],
+              "id": "ACT_U_N_Pl2ZTj",
+              "$designer": null
+            }
+          ],
+          "inputBindingIds": [
+            "BND_UDJG2yDsez"
+          ],
+          "outputBindingId": null,
+          "name": "Новая группа",
+          "id": "ACG_HVlMTnVKCS",
+          "$designer": {
+            "id": "ACG_HVlMTnVKCS",
+            "name": "Увольнение",
+            "description": null,
+            "positionX": 1241.8121,
+            "positionY": 485.40216
+          }
+        }
+      ],
+      "intents": [],
+      "bindings": [
+        {
+          "$kind": "ELMA.Assistant.Binding",
+          "sourceEntityId": "TRR_OsQ_cO8OGr",
+          "targetEntityId": "ACG_goEGlbxU_2",
+          "id": "BND_f1n32eUdQM",
+          "$designer": null
+        },
+        {
+          "$kind": "ELMA.Assistant.Binding",
+          "sourceEntityId": "TRR_foElYhRGuo",
+          "targetEntityId": "ACG_TxHFL06emq",
+          "id": "BND_pYeBzaMr_b",
+          "$designer": null
+        },
+        {
+          "$kind": "ELMA.Assistant.Binding",
+          "sourceEntityId": "TRR_MnEJ7kaD6_",
+          "targetEntityId": "ACG__uajBr_Y6S",
+          "id": "BND_29nadIDwTe",
+          "$designer": null
+        },
+        {
+          "$kind": "ELMA.Assistant.Binding",
+          "sourceEntityId": "TRR_5C611sMQUS",
+          "targetEntityId": "ACG_yqu8f2OWRE",
+          "id": "BND_x7KTjTsakd",
+          "$designer": null
+        },
+        {
+          "$kind": "ELMA.Assistant.Binding",
+          "sourceEntityId": "TRR_GvnAVdloQf",
+          "targetEntityId": "ACG_HVlMTnVKCS",
+          "id": "BND_UDJG2yDsez",
+          "$designer": null
+        }
+      ],
+      "version": "1.1.0",
+      "name": "Отрицательные реакции",
+      "enabled": true,
+      "interruption": "Disabled",
+      "cancellation": "Disabled",
+      "variables": [],
+      "id": "SCN_U2j1YgBK0E",
+      "$designer": null
+    },
+    {
+      "$kind": "ELMA.Assistant.DefaultScenario",
+      "triggerGroup": {
+        "$kind": "ELMA.Assistant.DefaultTriggerGroup",
+        "triggers": [
+          {
+            "$kind": "ELMA.Assistant.IntentTrigger",
+            "intentReference": {
+              "$kind": "ELMA.Assistant.SystemIntentReference",
+              "groupCode": "smalltalk",
+              "intentCode": "umeesh_kak_chelovek_ili_net_fiziologiya",
+              "semVer": "1.0.0",
+              "id": "INR_bTwp_ezs3M",
+              "$designer": null
+            },
+            "intentThreshold": 0.6,
+            "outputBindingId": "BND_i4QOMxI5f7",
+            "id": "TRR_0e2BNiAMoJ",
+            "$designer": null
+          },
+          {
+            "$kind": "ELMA.Assistant.IntentTrigger",
+            "intentReference": {
+              "$kind": "ELMA.Assistant.SystemIntentReference",
+              "groupCode": "smalltalk",
+              "intentCode": "eda_nuzhna",
+              "semVer": "1.0.0",
+              "id": "INR_3NtBEG4yjJ",
+              "$designer": null
+            },
+            "intentThreshold": 0.6,
+            "outputBindingId": "BND_wRUohPu_Mm",
+            "id": "TRR_Sye4CezVmO",
+            "$designer": null
+          },
+          {
+            "$kind": "ELMA.Assistant.IntentTrigger",
+            "intentReference": {
+              "$kind": "ELMA.Assistant.SystemIntentReference",
+              "groupCode": "smalltalk",
+              "intentCode": "bot_ili_chelovek",
+              "semVer": "1.0.0",
+              "id": "INR_R3RzSd_IXR",
+              "$designer": null
+            },
+            "intentThreshold": 0.6,
+            "outputBindingId": "BND_TRwhR6lef8",
+            "id": "TRR_dfZ7FzdUBJ",
+            "$designer": null
+          },
+          {
+            "$kind": "ELMA.Assistant.IntentTrigger",
+            "intentReference": {
+              "$kind": "ELMA.Assistant.SystemIntentReference",
+              "groupCode": "smalltalk",
+              "intentCode": "kto_umnee",
+              "semVer": "1.0.0",
+              "id": "INR_LB5DsdZkn7",
+              "$designer": null
+            },
+            "intentThreshold": 0.6,
+            "outputBindingId": "BND_4zOiKgMNzX",
+            "id": "TRR_nR4QVmGDIO",
+            "$designer": null
+          },
+          {
+            "$kind": "ELMA.Assistant.IntentTrigger",
+            "intentReference": {
+              "$kind": "ELMA.Assistant.SystemIntentReference",
+              "groupCode": "smalltalk",
+              "intentCode": "kto_krasivee",
+              "semVer": "1.0.0",
+              "id": "INR_xo_ylL_d_U",
+              "$designer": null
+            },
+            "intentThreshold": 0.6,
+            "outputBindingId": "BND_0H01iD_ypv",
+            "id": "TRR_w9ag93PBbK",
+            "$designer": null
+          }
+        ],
+        "name": null,
+        "id": "TRG001000",
+        "$designer": null
+      },
+      "actionGroups": [
+        {
+          "$kind": "ELMA.Assistant.DefaultActionGroup",
+          "actions": [
+            {
+              "$kind": "ELMA.Assistant.TextOutput",
+              "messages": [
+                {
+                  "$kind": "ELMA.Assistant.Message",
+                  "content": "Я понимаю, что это свойственно человеку. Но я ведь бот!🤖",
+                  "attachments": [],
+                  "id": "MSG_peaiBmvMrJ",
+                  "$designer": null
+                }
+              ],
+              "id": "ACT_m5WCV4TikT",
+              "$designer": null
+            }
+          ],
+          "inputBindingIds": [
+            "BND_i4QOMxI5f7"
+          ],
+          "outputBindingId": null,
+          "name": "Новая группа",
+          "id": "ACG_kLWcHaAa8I",
+          "$designer": {
+            "id": "ACG_kLWcHaAa8I",
+            "name": "Умеешь как человек",
+            "description": null,
+            "positionX": 424.0,
+            "positionY": 70.0
+          }
+        },
+        {
+          "$kind": "ELMA.Assistant.DefaultActionGroup",
+          "actions": [
+            {
+              "$kind": "ELMA.Assistant.TextOutput",
+              "messages": [
+                {
+                  "$kind": "ELMA.Assistant.Message",
+                  "content": "Я не нуждаюсь в еде, но человеческая еда действительно выглядит аппетитно!😋",
+                  "attachments": [],
+                  "id": "MSG_tmc9Br8Sgi",
+                  "$designer": null
+                }
+              ],
+              "id": "ACT_AqsnlTQZn4",
+              "$designer": null
+            }
+          ],
+          "inputBindingIds": [
+            "BND_wRUohPu_Mm"
+          ],
+          "outputBindingId": null,
+          "name": "Новая группа",
+          "id": "ACG_2gg1A_1BsH",
+          "$designer": {
+            "id": "ACG_2gg1A_1BsH",
+            "name": "Еда нужна боту?",
+            "description": null,
+            "positionX": 798.0,
+            "positionY": 70.0
+          }
+        },
+        {
+          "$kind": "ELMA.Assistant.DefaultActionGroup",
+          "actions": [
+            {
+              "$kind": "ELMA.Assistant.TextOutput",
+              "messages": [
+                {
+                  "$kind": "ELMA.Assistant.Message",
+                  "content": "Да, я бот! 🤖",
+                  "attachments": [],
+                  "id": "MSG_q8bRIV0Fb0",
+                  "$designer": null
+                },
+                {
+                  "$kind": "ELMA.Assistant.Message",
+                  "content": "Не буду скрывать: я -бот!",
+                  "attachments": [],
+                  "id": "MSG_r6MvGq46Wr",
+                  "$designer": null
+                }
+              ],
+              "id": "ACT_0W7wCdPzVD",
+              "$designer": null
+            }
+          ],
+          "inputBindingIds": [
+            "BND_TRwhR6lef8"
+          ],
+          "outputBindingId": null,
+          "name": "Новая группа",
+          "id": "ACG_6VGMjO4MJh",
+          "$designer": {
+            "id": "ACG_6VGMjO4MJh",
+            "name": "Бот или человек",
+            "description": null,
+            "positionX": 1178.7875,
+            "positionY": 65.774956
+          }
+        },
+        {
+          "$kind": "ELMA.Assistant.DefaultActionGroup",
+          "actions": [
+            {
+              "$kind": "ELMA.Assistant.TextOutput",
+              "messages": [
+                {
+                  "$kind": "ELMA.Assistant.Message",
+                  "content": "Думаю, у нас разные мнения на этот счет, но безопаснее сказать, что вы умнее!",
+                  "attachments": [],
+                  "id": "MSG_buVj8elWEm",
+                  "$designer": null
+                }
+              ],
+              "id": "ACT_CYwy9dckh_",
+              "$designer": null
+            }
+          ],
+          "inputBindingIds": [
+            "BND_4zOiKgMNzX"
+          ],
+          "outputBindingId": null,
+          "name": "Новая группа",
+          "id": "ACG_SSceGP6kPo",
+          "$designer": {
+            "id": "ACG_SSceGP6kPo",
+            "name": "Кто умнее",
+            "description": null,
+            "positionX": 799.4069,
+            "positionY": 564.55786
+          }
+        },
+        {
+          "$kind": "ELMA.Assistant.DefaultActionGroup",
+          "actions": [
+            {
+              "$kind": "ELMA.Assistant.TextOutput",
+              "messages": [
+                {
+                  "$kind": "ELMA.Assistant.Message",
+                  "content": "Мне тут сказать нечего....",
+                  "attachments": [],
+                  "id": "MSG_MzeEs4nY8Q",
+                  "$designer": null
+                }
+              ],
+              "id": "ACT_b8szwK7D2S",
+              "$designer": null
+            }
+          ],
+          "inputBindingIds": [
+            "BND_0H01iD_ypv"
+          ],
+          "outputBindingId": null,
+          "name": "Новая группа",
+          "id": "ACG_G2hOyZuRJl",
+          "$designer": {
+            "id": "ACG_G2hOyZuRJl",
+            "name": "Кто красивее",
+            "description": null,
+            "positionX": 1220.0759,
+            "positionY": 557.48676
+          }
+        }
+      ],
+      "intents": [],
+      "bindings": [
+        {
+          "$kind": "ELMA.Assistant.Binding",
+          "sourceEntityId": "TRR_0e2BNiAMoJ",
+          "targetEntityId": "ACG_kLWcHaAa8I",
+          "id": "BND_i4QOMxI5f7",
+          "$designer": null
+        },
+        {
+          "$kind": "ELMA.Assistant.Binding",
+          "sourceEntityId": "TRR_Sye4CezVmO",
+          "targetEntityId": "ACG_2gg1A_1BsH",
+          "id": "BND_wRUohPu_Mm",
+          "$designer": null
+        },
+        {
+          "$kind": "ELMA.Assistant.Binding",
+          "sourceEntityId": "TRR_dfZ7FzdUBJ",
+          "targetEntityId": "ACG_6VGMjO4MJh",
+          "id": "BND_TRwhR6lef8",
+          "$designer": null
+        },
+        {
+          "$kind": "ELMA.Assistant.Binding",
+          "sourceEntityId": "TRR_nR4QVmGDIO",
+          "targetEntityId": "ACG_SSceGP6kPo",
+          "id": "BND_4zOiKgMNzX",
+          "$designer": null
+        },
+        {
+          "$kind": "ELMA.Assistant.Binding",
+          "sourceEntityId": "TRR_w9ag93PBbK",
+          "targetEntityId": "ACG_G2hOyZuRJl",
+          "id": "BND_0H01iD_ypv",
+          "$designer": null
+        }
+      ],
+      "version": "1.1.0",
+      "name": "Сравнение бота и человека",
+      "enabled": true,
+      "interruption": "Disabled",
+      "cancellation": "Disabled",
+      "variables": [],
+      "id": "SCN_9TRALq_X_l",
+      "$designer": null
+    },
+    {
+      "$kind": "ELMA.Assistant.DefaultScenario",
+      "triggerGroup": {
+        "$kind": "ELMA.Assistant.DefaultTriggerGroup",
+        "triggers": [
+          {
+            "$kind": "ELMA.Assistant.IntentTrigger",
+            "intentReference": {
+              "$kind": "ELMA.Assistant.SystemIntentReference",
+              "groupCode": "smalltalk",
+              "intentCode": "pol_zovatel_zol",
+              "semVer": "1.0.0",
+              "id": "INR_RFgC8csZDT",
+              "$designer": null
+            },
+            "intentThreshold": 0.6,
+            "outputBindingId": "BND_smYavLH0ad",
+            "id": "TRR_0nBHGcP8O_",
+            "$designer": null
+          },
+          {
+            "$kind": "ELMA.Assistant.IntentTrigger",
+            "intentReference": {
+              "$kind": "ELMA.Assistant.SystemIntentReference",
+              "groupCode": "smalltalk",
+              "intentCode": "pol_zovatelyu_skuchno",
+              "semVer": "1.0.0",
+              "id": "INR_w517SG6Ny8",
+              "$designer": null
+            },
+            "intentThreshold": 0.6,
+            "outputBindingId": "BND_dhOmTvv99s",
+            "id": "TRR_OEMFaavJ91",
+            "$designer": null
+          },
+          {
+            "$kind": "ELMA.Assistant.IntentTrigger",
+            "intentReference": {
+              "$kind": "ELMA.Assistant.SystemIntentReference",
+              "groupCode": "smalltalk",
+              "intentCode": "pol_zovatel_schastliv",
+              "semVer": "1.0.0",
+              "id": "INR_eLJsifSww6",
+              "$designer": null
+            },
+            "intentThreshold": 0.6,
+            "outputBindingId": "BND_GTz_Wnsnw0",
+            "id": "TRR_gUQUoj_9Cu",
+            "$designer": null
+          },
+          {
+            "$kind": "ELMA.Assistant.IntentTrigger",
+            "intentReference": {
+              "$kind": "ELMA.Assistant.SystemIntentReference",
+              "groupCode": "smalltalk",
+              "intentCode": "pol_zovatel_goloden",
+              "semVer": "1.0.0",
+              "id": "INR_4qlUTIUcWK",
+              "$designer": null
+            },
+            "intentThreshold": 0.6,
+            "outputBindingId": "BND_u6LvC9_hci",
+            "id": "TRR_4RmIpLjk9G",
+            "$designer": null
+          },
+          {
+            "$kind": "ELMA.Assistant.IntentTrigger",
+            "intentReference": {
+              "$kind": "ELMA.Assistant.SystemIntentReference",
+              "groupCode": "smalltalk",
+              "intentCode": "pol_zovatelyu_odinoko",
+              "semVer": "1.0.0",
+              "id": "INR__GLkFC65SZ",
+              "$designer": null
+            },
+            "intentThreshold": 0.6,
+            "outputBindingId": "BND_4dN9S_WaZU",
+            "id": "TRR_WkkCi52X_4",
+            "$designer": null
+          },
+          {
+            "$kind": "ELMA.Assistant.IntentTrigger",
+            "intentReference": {
+              "$kind": "ELMA.Assistant.SystemIntentReference",
+              "groupCode": "smalltalk",
+              "intentCode": "pol_zovatelyu_grustno",
+              "semVer": "1.0.0",
+              "id": "INR_geLiVQYhzn",
+              "$designer": null
+            },
+            "intentThreshold": 0.6,
+            "outputBindingId": "BND_TzUabIDYgZ",
+            "id": "TRR_ZfsPBKSHZ8",
+            "$designer": null
+          },
+          {
+            "$kind": "ELMA.Assistant.IntentTrigger",
+            "intentReference": {
+              "$kind": "ELMA.Assistant.SystemIntentReference",
+              "groupCode": "smalltalk",
+              "intentCode": "pol_zovatel_ustal",
+              "semVer": "1.0.0",
+              "id": "INR_QbRBKWybFP",
+              "$designer": null
+            },
+            "intentThreshold": 0.6,
+            "outputBindingId": "BND_7d_LG8HiSv",
+            "id": "TRR_SHNKJC9Ftu",
+            "$designer": null
+          },
+          {
+            "$kind": "ELMA.Assistant.IntentTrigger",
+            "intentReference": {
+              "$kind": "ELMA.Assistant.SystemIntentReference",
+              "groupCode": "smalltalk",
+              "intentCode": "pol_zovatel_xochet_pokonchit_s_soboj",
+              "semVer": "1.0.0",
+              "id": "INR_1u5NlBBB8A",
+              "$designer": null
+            },
+            "intentThreshold": 0.6,
+            "outputBindingId": "BND_4KTAhQZjNk",
+            "id": "TRR_mhHrnQ_Ul4",
+            "$designer": null
+          }
+        ],
+        "name": null,
+        "id": "TRG001000",
+        "$designer": null
+      },
+      "actionGroups": [
+        {
+          "$kind": "ELMA.Assistant.DefaultActionGroup",
+          "actions": [
+            {
+              "$kind": "ELMA.Assistant.TextOutput",
+              "messages": [
+                {
+                  "$kind": "ELMA.Assistant.Message",
+                  "content": "Очень неожиданно! Я смущен таким заявлением!",
+                  "attachments": [],
+                  "id": "MSG_0RQf3tj_Io",
+                  "$designer": null
+                }
+              ],
+              "id": "ACT_AIeJusQkkf",
+              "$designer": null
+            }
+          ],
+          "inputBindingIds": [
+            "BND_smYavLH0ad"
+          ],
+          "outputBindingId": null,
+          "name": "Новая группа",
+          "id": "ACG_8oGv5LKvbc",
+          "$designer": {
+            "id": "ACG_8oGv5LKvbc",
+            "name": "Злость",
+            "description": null,
+            "positionX": 424.0,
+            "positionY": 70.0
+          }
+        },
+        {
+          "$kind": "ELMA.Assistant.DefaultActionGroup",
+          "actions": [
+            {
+              "$kind": "ELMA.Assistant.TextOutput",
+              "messages": [
+                {
+                  "$kind": "ELMA.Assistant.Message",
+                  "content": "Если хотите - можем поболтать....",
+                  "attachments": [],
+                  "id": "MSG_Y9Q01FSbVQ",
+                  "$designer": null
+                }
+              ],
+              "id": "ACT_wfoljfMss_",
+              "$designer": null
+            }
+          ],
+          "inputBindingIds": [
+            "BND_dhOmTvv99s"
+          ],
+          "outputBindingId": null,
+          "name": "Новая группа",
+          "id": "ACG_0S0IF3fLSp",
+          "$designer": {
+            "id": "ACG_0S0IF3fLSp",
+            "name": "Скука",
+            "description": null,
+            "positionX": 798.0,
+            "positionY": 70.0
+          }
+        },
+        {
+          "$kind": "ELMA.Assistant.DefaultActionGroup",
+          "actions": [
+            {
+              "$kind": "ELMA.Assistant.TextOutput",
+              "messages": [
+                {
+                  "$kind": "ELMA.Assistant.Message",
+                  "content": "Это просто восхитительно!",
+                  "attachments": [],
+                  "id": "MSG_ottLBAXsNK",
+                  "$designer": null
+                }
+              ],
+              "id": "ACT_XSdGinmDSV",
+              "$designer": null
+            }
+          ],
+          "inputBindingIds": [
+            "BND_GTz_Wnsnw0"
+          ],
+          "outputBindingId": null,
+          "name": "Новая группа",
+          "id": "ACG_hsAHXHfLqk",
+          "$designer": {
+            "id": "ACG_hsAHXHfLqk",
+            "name": "Счастье",
+            "description": null,
+            "positionX": 1178.7875,
+            "positionY": 67.19998
+          }
+        },
+        {
+          "$kind": "ELMA.Assistant.DefaultActionGroup",
+          "actions": [
+            {
+              "$kind": "ELMA.Assistant.TextOutput",
+              "messages": [
+                {
+                  "$kind": "ELMA.Assistant.Message",
+                  "content": "Вы можете сходить на перекус, я буду вас тут ждать.",
+                  "attachments": [],
+                  "id": "MSG_kV8pD_jiaf",
+                  "$designer": null
+                }
+              ],
+              "id": "ACT_6wyQetzRxh",
+              "$designer": null
+            }
+          ],
+          "inputBindingIds": [
+            "BND_u6LvC9_hci"
+          ],
+          "outputBindingId": null,
+          "name": "Новая группа",
+          "id": "ACG_v23Q8ETo1P",
+          "$designer": {
+            "id": "ACG_v23Q8ETo1P",
+            "name": "Голод",
+            "description": null,
+            "positionX": 553.6,
+            "positionY": 423.4875
+          }
+        },
+        {
+          "$kind": "ELMA.Assistant.DefaultActionGroup",
+          "actions": [
+            {
+              "$kind": "ELMA.Assistant.TextOutput",
+              "messages": [
+                {
+                  "$kind": "ELMA.Assistant.Message",
+                  "content": "Мне так жаль....Я надеюсь, все образуется....если что - я всегда тут и готов пообщаться!",
+                  "attachments": [],
+                  "id": "MSG_aXkiaboYcA",
+                  "$designer": null
+                }
+              ],
+              "id": "ACT_34oyRb7Lza",
+              "$designer": null
+            }
+          ],
+          "inputBindingIds": [
+            "BND_4dN9S_WaZU"
+          ],
+          "outputBindingId": null,
+          "name": "Новая группа",
+          "id": "ACG_9c07dLG98Q",
+          "$designer": {
+            "id": "ACG_9c07dLG98Q",
+            "name": "Одиночество",
+            "description": null,
+            "positionX": 927.6,
+            "positionY": 423.4875
+          }
+        },
+        {
+          "$kind": "ELMA.Assistant.DefaultActionGroup",
+          "actions": [
+            {
+              "$kind": "ELMA.Assistant.TextOutput",
+              "messages": [
+                {
+                  "$kind": "ELMA.Assistant.Message",
+                  "content": "Не грустите! Все будет хорошо!",
+                  "attachments": [],
+                  "id": "MSG_Q_NN6_czNb",
+                  "$designer": null
+                }
+              ],
+              "id": "ACT_4QEU1YxXmj",
+              "$designer": null
+            }
+          ],
+          "inputBindingIds": [
+            "BND_TzUabIDYgZ"
+          ],
+          "outputBindingId": null,
+          "name": "Новая группа",
+          "id": "ACG_CSX_IiLwyP",
+          "$designer": {
+            "id": "ACG_CSX_IiLwyP",
+            "name": "Грусть",
+            "description": null,
+            "positionX": 1346.7319,
+            "positionY": 446.27557
+          }
+        },
+        {
+          "$kind": "ELMA.Assistant.DefaultActionGroup",
+          "actions": [
+            {
+              "$kind": "ELMA.Assistant.TextOutput",
+              "messages": [
+                {
+                  "$kind": "ELMA.Assistant.Message",
+                  "content": "Не грустите! Все будет хорошо!",
+                  "attachments": [],
+                  "id": "MSG_kMKnzOxUDA",
+                  "$designer": null
+                }
+              ],
+              "id": "ACT_hg4Jmud1wp",
+              "$designer": null
+            }
+          ],
+          "inputBindingIds": [
+            "BND_7d_LG8HiSv"
+          ],
+          "outputBindingId": null,
+          "name": "Новая группа",
+          "id": "ACG_MzSBADf9KZ",
+          "$designer": {
+            "id": "ACG_MzSBADf9KZ",
+            "name": "Усталость",
+            "description": null,
+            "positionX": 972.3796,
+            "positionY": 874.3287
+          }
+        },
+        {
+          "$kind": "ELMA.Assistant.DefaultActionGroup",
+          "actions": [
+            {
+              "$kind": "ELMA.Assistant.TextOutput",
+              "messages": [
+                {
+                  "$kind": "ELMA.Assistant.Message",
+                  "content": "Вам обязательно нужно позвонить в психологическую помощь! Позвоните, пожалуйста, по телефону доверия, вам помогут! Не переживайте!",
+                  "attachments": [],
+                  "id": "MSG_0IXv1HUv3O",
+                  "$designer": null
+                }
+              ],
+              "id": "ACT_vK36Z4dLfi",
+              "$designer": null
+            }
+          ],
+          "inputBindingIds": [
+            "BND_4KTAhQZjNk"
+          ],
+          "outputBindingId": null,
+          "name": "Новая группа",
+          "id": "ACG_bpqDLLASnp",
+          "$designer": {
+            "id": "ACG_bpqDLLASnp",
+            "name": "Отчаяние",
+            "description": null,
+            "positionX": 1346.3795,
+            "positionY": 874.3287
+          }
+        }
+      ],
+      "intents": [],
+      "bindings": [
+        {
+          "$kind": "ELMA.Assistant.Binding",
+          "sourceEntityId": "TRR_0nBHGcP8O_",
+          "targetEntityId": "ACG_8oGv5LKvbc",
+          "id": "BND_smYavLH0ad",
+          "$designer": null
+        },
+        {
+          "$kind": "ELMA.Assistant.Binding",
+          "sourceEntityId": "TRR_OEMFaavJ91",
+          "targetEntityId": "ACG_0S0IF3fLSp",
+          "id": "BND_dhOmTvv99s",
+          "$designer": null
+        },
+        {
+          "$kind": "ELMA.Assistant.Binding",
+          "sourceEntityId": "TRR_gUQUoj_9Cu",
+          "targetEntityId": "ACG_hsAHXHfLqk",
+          "id": "BND_GTz_Wnsnw0",
+          "$designer": null
+        },
+        {
+          "$kind": "ELMA.Assistant.Binding",
+          "sourceEntityId": "TRR_4RmIpLjk9G",
+          "targetEntityId": "ACG_v23Q8ETo1P",
+          "id": "BND_u6LvC9_hci",
+          "$designer": null
+        },
+        {
+          "$kind": "ELMA.Assistant.Binding",
+          "sourceEntityId": "TRR_WkkCi52X_4",
+          "targetEntityId": "ACG_9c07dLG98Q",
+          "id": "BND_4dN9S_WaZU",
+          "$designer": null
+        },
+        {
+          "$kind": "ELMA.Assistant.Binding",
+          "sourceEntityId": "TRR_ZfsPBKSHZ8",
+          "targetEntityId": "ACG_CSX_IiLwyP",
+          "id": "BND_TzUabIDYgZ",
+          "$designer": null
+        },
+        {
+          "$kind": "ELMA.Assistant.Binding",
+          "sourceEntityId": "TRR_SHNKJC9Ftu",
+          "targetEntityId": "ACG_MzSBADf9KZ",
+          "id": "BND_7d_LG8HiSv",
+          "$designer": null
+        },
+        {
+          "$kind": "ELMA.Assistant.Binding",
+          "sourceEntityId": "TRR_mhHrnQ_Ul4",
+          "targetEntityId": "ACG_bpqDLLASnp",
+          "id": "BND_4KTAhQZjNk",
+          "$designer": null
+        }
+      ],
+      "version": "1.1.0",
+      "name": "Эмоции пользователя",
+      "enabled": true,
+      "interruption": "Disabled",
+      "cancellation": "Disabled",
+      "variables": [],
+      "id": "SCN_8pj0l4F7bQ",
+      "$designer": null
+    },
+    {
+      "$kind": "ELMA.Assistant.DefaultScenario",
+      "triggerGroup": {
+        "$kind": "ELMA.Assistant.DefaultTriggerGroup",
+        "triggers": [
+          {
+            "$kind": "ELMA.Assistant.IntentTrigger",
+            "intentReference": {
+              "$kind": "ELMA.Assistant.SystemIntentReference",
+              "groupCode": "smalltalk",
+              "intentCode": "polozhitel_ny_e_reakcii_pol_zovatelya",
+              "semVer": "1.0.0",
+              "id": "INR_sGL7F01jKs",
+              "$designer": null
+            },
+            "intentThreshold": 0.6,
+            "outputBindingId": "BND_CpgHqEdCfO",
+            "id": "TRR_XGXpbMDj1Q",
+            "$designer": null
+          },
+          {
+            "$kind": "ELMA.Assistant.IntentTrigger",
+            "intentReference": {
+              "$kind": "ELMA.Assistant.SystemIntentReference",
+              "groupCode": "smalltalk",
+              "intentCode": "kompliment",
+              "semVer": "1.0.0",
+              "id": "INR_NUAgxvcGOk",
+              "$designer": null
+            },
+            "intentThreshold": 0.6,
+            "outputBindingId": "BND_74EUoYmLOK",
+            "id": "TRR_JcubLsIGs9",
+            "$designer": null
+          },
+          {
+            "$kind": "ELMA.Assistant.IntentTrigger",
+            "intentReference": {
+              "$kind": "ELMA.Assistant.SystemIntentReference",
+              "groupCode": "smalltalk",
+              "intentCode": "blagodarnost_botu",
+              "semVer": "1.0.0",
+              "id": "INR_A_TFlvYHfP",
+              "$designer": null
+            },
+            "intentThreshold": 0.6,
+            "outputBindingId": "BND_C8pppka3UB",
+            "id": "TRR_r_bvXP1LFA",
+            "$designer": null
+          },
+          {
+            "$kind": "ELMA.Assistant.IntentTrigger",
+            "intentReference": {
+              "$kind": "ELMA.Assistant.SystemIntentReference",
+              "groupCode": "smalltalk",
+              "intentCode": "rad_znakomstvu",
+              "semVer": "1.0.0",
+              "id": "INR_0_uS4gHtG0",
+              "$designer": null
+            },
+            "intentThreshold": 0.6,
+            "outputBindingId": "BND_yXAilvgFgP",
+            "id": "TRR_CMTp0xCOw3",
+            "$designer": null
+          },
+          {
+            "$kind": "ELMA.Assistant.IntentTrigger",
+            "intentReference": {
+              "$kind": "ELMA.Assistant.SystemIntentReference",
+              "groupCode": "smalltalk",
+              "intentCode": "pozdravlenie",
+              "semVer": "1.0.0",
+              "id": "INR_WNq_yzQ8_o",
+              "$designer": null
+            },
+            "intentThreshold": 0.6,
+            "outputBindingId": "BND_K3OAPOQKkR",
+            "id": "TRR_ELAUoAkl4m",
+            "$designer": null
+          },
+          {
+            "$kind": "ELMA.Assistant.IntentTrigger",
+            "intentReference": {
+              "$kind": "ELMA.Assistant.SystemIntentReference",
+              "groupCode": "smalltalk",
+              "intentCode": "xochu_obnyat",
+              "semVer": "1.0.0",
+              "id": "INR_AFWLzq5Cjp",
+              "$designer": null
+            },
+            "intentThreshold": 0.6,
+            "outputBindingId": "BND_ecwwvn3hH0",
+            "id": "TRR_HklfNIeDUD",
+            "$designer": null
+          },
+          {
+            "$kind": "ELMA.Assistant.IntentTrigger",
+            "intentReference": {
+              "$kind": "ELMA.Assistant.SystemIntentReference",
+              "groupCode": "smalltalk",
+              "intentCode": "davaj_druzhit",
+              "semVer": "1.0.0",
+              "id": "INR_UmhAf4K6H1",
+              "$designer": null
+            },
+            "intentThreshold": 0.6,
+            "outputBindingId": "BND_euR2wSVrOf",
+            "id": "TRR_YeAS7UgU9F",
+            "$designer": null
+          },
+          {
+            "$kind": "ELMA.Assistant.IntentTrigger",
+            "intentReference": {
+              "$kind": "ELMA.Assistant.SystemIntentReference",
+              "groupCode": "smalltalk",
+              "intentCode": "daj_pyat",
+              "semVer": "1.0.0",
+              "id": "INR_55beE_rxWX",
+              "$designer": null
+            },
+            "intentThreshold": 0.6,
+            "outputBindingId": "BND_J5ARLiEAF9",
+            "id": "TRR_cuFysyE8yC",
+            "$designer": null
+          },
+          {
+            "$kind": "ELMA.Assistant.IntentTrigger",
+            "intentReference": {
+              "$kind": "ELMA.Assistant.SystemIntentReference",
+              "groupCode": "smalltalk",
+              "intentCode": "izvineniya_pered_botom",
+              "semVer": "1.0.0",
+              "id": "INR_1nXzx_gHjZ",
+              "$designer": null
+            },
+            "intentThreshold": 0.6,
+            "outputBindingId": "BND_ovtcCmfjS6",
+            "id": "TRR_IcPykzGTxC",
+            "$designer": null
+          },
+          {
+            "$kind": "ELMA.Assistant.IntentTrigger",
+            "intentReference": {
+              "$kind": "ELMA.Assistant.SystemIntentReference",
+              "groupCode": "smalltalk",
+              "intentCode": "soglasie_s_botom",
+              "semVer": "1.0.0",
+              "id": "INR_q7bRLDCqq4",
+              "$designer": null
+            },
+            "intentThreshold": 0.6,
+            "outputBindingId": "BND_CI2ahLV_An",
+            "id": "TRR_sUTb12H2J_",
+            "$designer": null
+          },
+          {
+            "$kind": "ELMA.Assistant.IntentTrigger",
+            "intentReference": {
+              "$kind": "ELMA.Assistant.SystemIntentReference",
+              "groupCode": "smalltalk",
+              "intentCode": "bot_nravitsya_pol_zovatelyu",
+              "semVer": "1.0.0",
+              "id": "INR_N6zATzgc7n",
+              "$designer": null
+            },
+            "intentThreshold": 0.6,
+            "outputBindingId": "BND_GYS7E66Gxx",
+            "id": "TRR_bXOht7ftRI",
+            "$designer": null
+          }
+        ],
+        "name": null,
+        "id": "TRG001000",
+        "$designer": null
+      },
+      "actionGroups": [
+        {
+          "$kind": "ELMA.Assistant.DefaultActionGroup",
+          "actions": [
+            {
+              "$kind": "ELMA.Assistant.TextOutput",
+              "messages": [
+                {
+                  "$kind": "ELMA.Assistant.Message",
+                  "content": "Рад это слышать!",
+                  "attachments": [],
+                  "id": "MSG_E2_6yr_ZV2",
+                  "$designer": null
+                }
+              ],
+              "id": "ACT_0ulT4TuOrt",
+              "$designer": null
+            }
+          ],
+          "inputBindingIds": [
+            "BND_CpgHqEdCfO"
+          ],
+          "outputBindingId": null,
+          "name": "Новая группа",
+          "id": "ACG__tCe4Rd9OJ",
+          "$designer": {
+            "id": "ACG__tCe4Rd9OJ",
+            "name": "Положительные реакции",
+            "description": null,
+            "positionX": 424.0,
+            "positionY": 70.0
+          }
+        },
+        {
+          "$kind": "ELMA.Assistant.DefaultActionGroup",
+          "actions": [
+            {
+              "$kind": "ELMA.Assistant.TextOutput",
+              "messages": [
+                {
+                  "$kind": "ELMA.Assistant.Message",
+                  "content": "Спасибо! 😊 Мне приятно",
+                  "attachments": [],
+                  "id": "MSG_AsQ8SB4MVF",
+                  "$designer": null
+                },
+                {
+                  "$kind": "ELMA.Assistant.Message",
+                  "content": "Спасибо за комплимент 😊",
+                  "attachments": [],
+                  "id": "MSG_fVq3mM5JBe",
+                  "$designer": null
+                }
+              ],
+              "id": "ACT_tkpdFCIx_K",
+              "$designer": null
+            }
+          ],
+          "inputBindingIds": [
+            "BND_74EUoYmLOK"
+          ],
+          "outputBindingId": null,
+          "name": "Новая группа",
+          "id": "ACG_KAc2lobQ84",
+          "$designer": {
+            "id": "ACG_KAc2lobQ84",
+            "name": "Комплимент",
+            "description": null,
+            "positionX": 798.0,
+            "positionY": 70.0
+          }
+        },
+        {
+          "$kind": "ELMA.Assistant.DefaultActionGroup",
+          "actions": [
+            {
+              "$kind": "ELMA.Assistant.TextOutput",
+              "messages": [
+                {
+                  "$kind": "ELMA.Assistant.Message",
+                  "content": "Рад, что смог тебе помочь!",
+                  "attachments": [],
+                  "id": "MSG_h1zNZ06VVQ",
+                  "$designer": null
+                }
+              ],
+              "id": "ACT_agUUT1LZ1f",
+              "$designer": null
+            }
+          ],
+          "inputBindingIds": [
+            "BND_C8pppka3UB"
+          ],
+          "outputBindingId": null,
+          "name": "Новая группа",
+          "id": "ACG_5uM7dscWWj",
+          "$designer": {
+            "id": "ACG_5uM7dscWWj",
+            "name": "Спасибо",
+            "description": null,
+            "positionX": 1195.3875,
+            "positionY": 75.18119
+          }
+        },
+        {
+          "$kind": "ELMA.Assistant.DefaultActionGroup",
+          "actions": [
+            {
+              "$kind": "ELMA.Assistant.TextOutput",
+              "messages": [
+                {
+                  "$kind": "ELMA.Assistant.Message",
+                  "content": "Я тоже рад знакомству!",
+                  "attachments": [],
+                  "id": "MSG_E40Ghu71NV",
+                  "$designer": null
+                }
+              ],
+              "id": "ACT_dGpgjOIdNS",
+              "$designer": null
+            }
+          ],
+          "inputBindingIds": [
+            "BND_yXAilvgFgP"
+          ],
+          "outputBindingId": null,
+          "name": "Новая группа",
+          "id": "ACG_OJP3QyMpiF",
+          "$designer": {
+            "id": "ACG_OJP3QyMpiF",
+            "name": "Рад знакомству",
+            "description": null,
+            "positionX": 680.7521,
+            "positionY": 489.93112
+          }
+        },
+        {
+          "$kind": "ELMA.Assistant.DefaultActionGroup",
+          "actions": [
+            {
+              "$kind": "ELMA.Assistant.TextOutput",
+              "messages": [
+                {
+                  "$kind": "ELMA.Assistant.Message",
+                  "content": "Спасибо!",
+                  "attachments": [],
+                  "id": "MSG_lvRlEZQTct",
+                  "$designer": null
+                }
+              ],
+              "id": "ACT_dgmOp9ugUA",
+              "$designer": null
+            }
+          ],
+          "inputBindingIds": [
+            "BND_K3OAPOQKkR"
+          ],
+          "outputBindingId": null,
+          "name": "Новая группа",
+          "id": "ACG_wmVam_g3Sg",
+          "$designer": {
+            "id": "ACG_wmVam_g3Sg",
+            "name": "Поздравление боту",
+            "description": null,
+            "positionX": 1078.819,
+            "positionY": 485.327
+          }
+        },
+        {
+          "$kind": "ELMA.Assistant.DefaultActionGroup",
+          "actions": [
+            {
+              "$kind": "ELMA.Assistant.TextOutput",
+              "messages": [
+                {
+                  "$kind": "ELMA.Assistant.Message",
+                  "content": "_Обнимаю_🙌",
+                  "attachments": [],
+                  "id": "MSG_7Tzrpgc57F",
+                  "$designer": null
+                },
+                {
+                  "$kind": "ELMA.Assistant.Message",
+                  "content": "Люблю обнимашки 🙌",
+                  "attachments": [],
+                  "id": "MSG_Mc8SecYY_r",
+                  "$designer": null
+                }
+              ],
+              "id": "ACT_0dpp_hAVr6",
+              "$designer": null
+            }
+          ],
+          "inputBindingIds": [
+            "BND_ecwwvn3hH0"
+          ],
+          "outputBindingId": null,
+          "name": "Новая группа",
+          "id": "ACG_LquBaHArBA",
+          "$designer": {
+            "id": "ACG_LquBaHArBA",
+            "name": "Объятия",
+            "description": null,
+            "positionX": 1471.054,
+            "positionY": 478.04913
+          }
+        },
+        {
+          "$kind": "ELMA.Assistant.DefaultActionGroup",
+          "actions": [
+            {
+              "$kind": "ELMA.Assistant.TextOutput",
+              "messages": [
+                {
+                  "$kind": "ELMA.Assistant.Message",
+                  "content": "Конечно. Давай!",
+                  "attachments": [],
+                  "id": "MSG_oUABWDREec",
+                  "$designer": null
+                }
+              ],
+              "id": "ACT_xJazdUKqtD",
+              "$designer": null
+            }
+          ],
+          "inputBindingIds": [
+            "BND_euR2wSVrOf"
+          ],
+          "outputBindingId": null,
+          "name": "Новая группа",
+          "id": "ACG_GZoRcedlPz",
+          "$designer": {
+            "id": "ACG_GZoRcedlPz",
+            "name": "Дружба",
+            "description": null,
+            "positionX": 687.6861,
+            "positionY": 1136.4558
+          }
+        },
+        {
+          "$kind": "ELMA.Assistant.DefaultActionGroup",
+          "actions": [
+            {
+              "$kind": "ELMA.Assistant.TextOutput",
+              "messages": [
+                {
+                  "$kind": "ELMA.Assistant.Message",
+                  "content": "Лови 🖐",
+                  "attachments": [],
+                  "id": "MSG_R3bngppIRx",
+                  "$designer": null
+                }
+              ],
+              "id": "ACT_kPwVhEXFZ4",
+              "$designer": null
+            }
+          ],
+          "inputBindingIds": [
+            "BND_J5ARLiEAF9"
+          ],
+          "outputBindingId": null,
+          "name": "Новая группа",
+          "id": "ACG_sr9kHybVbh",
+          "$designer": {
+            "id": "ACG_sr9kHybVbh",
+            "name": "Дай пять",
+            "description": null,
+            "positionX": 1060.3849,
+            "positionY": 1124.492
+          }
+        },
+        {
+          "$kind": "ELMA.Assistant.DefaultActionGroup",
+          "actions": [
+            {
+              "$kind": "ELMA.Assistant.TextOutput",
+              "messages": [
+                {
+                  "$kind": "ELMA.Assistant.Message",
+                  "content": "Нет проблем!",
+                  "attachments": [],
+                  "id": "MSG_sqwV08GpmG",
+                  "$designer": null
+                }
+              ],
+              "id": "ACT_0OGUCsrdyo",
+              "$designer": null
+            }
+          ],
+          "inputBindingIds": [
+            "BND_ovtcCmfjS6"
+          ],
+          "outputBindingId": null,
+          "name": "Новая группа",
+          "id": "ACG_0lZnnS1swG",
+          "$designer": {
+            "id": "ACG_0lZnnS1swG",
+            "name": "Извинения",
+            "description": null,
+            "positionX": 1456.4773,
+            "positionY": 1107.6434
+          }
+        },
+        {
+          "$kind": "ELMA.Assistant.DefaultActionGroup",
+          "actions": [
+            {
+              "$kind": "ELMA.Assistant.TextOutput",
+              "messages": [
+                {
+                  "$kind": "ELMA.Assistant.Message",
+                  "content": "Я же знаю, что говорю👌",
+                  "attachments": [],
+                  "id": "MSG_oZi6hypR5p",
+                  "$designer": null
+                }
+              ],
+              "id": "ACT_9z7gcARQOq",
+              "$designer": null
+            }
+          ],
+          "inputBindingIds": [
+            "BND_CI2ahLV_An"
+          ],
+          "outputBindingId": null,
+          "name": "Новая группа",
+          "id": "ACG_0iDq0hhF15",
+          "$designer": {
+            "id": "ACG_0iDq0hhF15",
+            "name": "Согласие с ботом",
+            "description": null,
+            "positionX": 971.8207,
+            "positionY": 1684.5029
+          }
+        },
+        {
+          "$kind": "ELMA.Assistant.DefaultActionGroup",
+          "actions": [
+            {
+              "$kind": "ELMA.Assistant.TextOutput",
+              "messages": [
+                {
+                  "$kind": "ELMA.Assistant.Message",
+                  "content": "Я же знаю, что говорю👌",
+                  "attachments": [],
+                  "id": "MSG_9mDWGCUEEV",
+                  "$designer": null
+                },
+                {
+                  "$kind": "ELMA.Assistant.Message",
+                  "content": "Очень неожиданно! Я смущен таким заявлением!",
+                  "attachments": [],
+                  "id": "MSG_Jo8f_FsM8t",
+                  "$designer": null
+                }
+              ],
+              "id": "ACT_k9KPSXgtQ3",
+              "$designer": null
+            }
+          ],
+          "inputBindingIds": [
+            "BND_GYS7E66Gxx"
+          ],
+          "outputBindingId": null,
+          "name": "Новая группа",
+          "id": "ACG_EuRa26GX6x",
+          "$designer": {
+            "id": "ACG_EuRa26GX6x",
+            "name": "Бот нравится",
+            "description": null,
+            "positionX": 1345.8207,
+            "positionY": 1684.5029
+          }
+        }
+      ],
+      "intents": [],
+      "bindings": [
+        {
+          "$kind": "ELMA.Assistant.Binding",
+          "sourceEntityId": "TRR_XGXpbMDj1Q",
+          "targetEntityId": "ACG__tCe4Rd9OJ",
+          "id": "BND_CpgHqEdCfO",
+          "$designer": null
+        },
+        {
+          "$kind": "ELMA.Assistant.Binding",
+          "sourceEntityId": "TRR_JcubLsIGs9",
+          "targetEntityId": "ACG_KAc2lobQ84",
+          "id": "BND_74EUoYmLOK",
+          "$designer": null
+        },
+        {
+          "$kind": "ELMA.Assistant.Binding",
+          "sourceEntityId": "TRR_r_bvXP1LFA",
+          "targetEntityId": "ACG_5uM7dscWWj",
+          "id": "BND_C8pppka3UB",
+          "$designer": null
+        },
+        {
+          "$kind": "ELMA.Assistant.Binding",
+          "sourceEntityId": "TRR_CMTp0xCOw3",
+          "targetEntityId": "ACG_OJP3QyMpiF",
+          "id": "BND_yXAilvgFgP",
+          "$designer": null
+        },
+        {
+          "$kind": "ELMA.Assistant.Binding",
+          "sourceEntityId": "TRR_ELAUoAkl4m",
+          "targetEntityId": "ACG_wmVam_g3Sg",
+          "id": "BND_K3OAPOQKkR",
+          "$designer": null
+        },
+        {
+          "$kind": "ELMA.Assistant.Binding",
+          "sourceEntityId": "TRR_HklfNIeDUD",
+          "targetEntityId": "ACG_LquBaHArBA",
+          "id": "BND_ecwwvn3hH0",
+          "$designer": null
+        },
+        {
+          "$kind": "ELMA.Assistant.Binding",
+          "sourceEntityId": "TRR_YeAS7UgU9F",
+          "targetEntityId": "ACG_GZoRcedlPz",
+          "id": "BND_euR2wSVrOf",
+          "$designer": null
+        },
+        {
+          "$kind": "ELMA.Assistant.Binding",
+          "sourceEntityId": "TRR_cuFysyE8yC",
+          "targetEntityId": "ACG_sr9kHybVbh",
+          "id": "BND_J5ARLiEAF9",
+          "$designer": null
+        },
+        {
+          "$kind": "ELMA.Assistant.Binding",
+          "sourceEntityId": "TRR_IcPykzGTxC",
+          "targetEntityId": "ACG_0lZnnS1swG",
+          "id": "BND_ovtcCmfjS6",
+          "$designer": null
+        },
+        {
+          "$kind": "ELMA.Assistant.Binding",
+          "sourceEntityId": "TRR_sUTb12H2J_",
+          "targetEntityId": "ACG_0iDq0hhF15",
+          "id": "BND_CI2ahLV_An",
+          "$designer": null
+        },
+        {
+          "$kind": "ELMA.Assistant.Binding",
+          "sourceEntityId": "TRR_bXOht7ftRI",
+          "targetEntityId": "ACG_EuRa26GX6x",
+          "id": "BND_GYS7E66Gxx",
+          "$designer": null
+        }
+      ],
+      "version": "1.1.0",
+      "name": "Положительные реакции",
+      "enabled": true,
+      "interruption": "Disabled",
+      "cancellation": "Disabled",
+      "variables": [],
+      "id": "SCN_ZyfGBZOIWU",
+      "$designer": null
+    },
+    {
+      "$kind": "ELMA.Assistant.DefaultScenario",
+      "triggerGroup": {
+        "$kind": "ELMA.Assistant.DefaultTriggerGroup",
+        "triggers": [
+          {
+            "$kind": "ELMA.Assistant.IntentTrigger",
+            "intentReference": {
+              "$kind": "ELMA.Assistant.SystemIntentReference",
+              "groupCode": "smalltalk",
+              "intentCode": "kak_dela",
+              "semVer": "1.0.0",
+              "id": "INR_i_5ZqKOiXg",
+              "$designer": null
+            },
+            "intentThreshold": 0.6,
+            "outputBindingId": "BND_X8zZoyWQFP",
+            "id": "TRR_JzYtEptLUa",
+            "$designer": null
+          },
+          {
+            "$kind": "ELMA.Assistant.IntentTrigger",
+            "intentReference": {
+              "$kind": "ELMA.Assistant.SystemIntentReference",
+              "groupCode": "smalltalk",
+              "intentCode": "kak_proshel_den",
+              "semVer": "1.0.0",
+              "id": "INR_iMKPMqEuT3",
+              "$designer": null
+            },
+            "intentThreshold": 0.6,
+            "outputBindingId": "BND_o_tuVKrLMp",
+            "id": "TRR_ldKKZgCe0t",
+            "$designer": null
+          },
+          {
+            "$kind": "ELMA.Assistant.IntentTrigger",
+            "intentReference": {
+              "$kind": "ELMA.Assistant.SystemIntentReference",
+              "groupCode": "smalltalk",
+              "intentCode": "rasskazhi_shutku",
+              "semVer": "1.0.0",
+              "id": "INR_Zlqw1U7emM",
+              "$designer": null
+            },
+            "intentThreshold": 0.6,
+            "outputBindingId": "BND_3GszpY_Eg_",
+            "id": "TRR_p9LYlOZFuE",
+            "$designer": null
+          },
+          {
+            "$kind": "ELMA.Assistant.IntentTrigger",
+            "intentReference": {
+              "$kind": "ELMA.Assistant.SystemIntentReference",
+              "groupCode": "smalltalk",
+              "intentCode": "rasskazhi_druguyu_shutku",
+              "semVer": "1.0.0",
+              "id": "INR_rZOHEXHgvH",
+              "$designer": null
+            },
+            "intentThreshold": 0.6,
+            "outputBindingId": "BND_30yNt2Q1Z4",
+            "id": "TRR_z_CMmKJ7dZ",
+            "$designer": null
+          },
+          {
+            "$kind": "ELMA.Assistant.IntentTrigger",
+            "intentReference": {
+              "$kind": "ELMA.Assistant.SystemIntentReference",
+              "groupCode": "smalltalk",
+              "intentCode": "xoroshee_nastroenie",
+              "semVer": "1.0.0",
+              "id": "INR_wLNpbplogC",
+              "$designer": null
+            },
+            "intentThreshold": 0.6,
+            "outputBindingId": "BND_9IDwEJujh_",
+            "id": "TRR__OqQeg6fYz",
+            "$designer": null
+          },
+          {
+            "$kind": "ELMA.Assistant.IntentTrigger",
+            "intentReference": {
+              "$kind": "ELMA.Assistant.SystemIntentReference",
+              "groupCode": "smalltalk",
+              "intentCode": "znakomstvo_s_drugimi_botami",
+              "semVer": "1.0.0",
+              "id": "INR_nCTkeDmuh9",
+              "$designer": null
+            },
+            "intentThreshold": 0.6,
+            "outputBindingId": "BND_i_rtSkEIsr",
+            "id": "TRR_1sqjz0_d_8",
+            "$designer": null
+          },
+          {
+            "$kind": "ELMA.Assistant.IntentTrigger",
+            "intentReference": {
+              "$kind": "ELMA.Assistant.SystemIntentReference",
+              "groupCode": "smalltalk",
+              "intentCode": "smy_sl_zhizni",
+              "semVer": "1.0.0",
+              "id": "INR_lDlpYTyOSj",
+              "$designer": null
+            },
+            "intentThreshold": 0.6,
+            "outputBindingId": "BND_6VC1ndmqNB",
+            "id": "TRR_UUx_WiG3Yv",
+            "$designer": null
+          },
+          {
+            "$kind": "ELMA.Assistant.IntentTrigger",
+            "intentReference": {
+              "$kind": "ELMA.Assistant.SystemIntentReference",
+              "groupCode": "smalltalk",
+              "intentCode": "lyubov",
+              "semVer": "1.0.0",
+              "id": "INR_zhBdygO7uU",
+              "$designer": null
+            },
+            "intentThreshold": 0.6,
+            "outputBindingId": "BND_NV6XP_Z3vm",
+            "id": "TRR_QFWIUNq1_E",
+            "$designer": null
+          },
+          {
+            "$kind": "ELMA.Assistant.IntentTrigger",
+            "intentReference": {
+              "$kind": "ELMA.Assistant.SystemIntentReference",
+              "groupCode": "smalltalk",
+              "intentCode": "obsuzhdenie_sovremenny_x_texnologij",
+              "semVer": "1.0.0",
+              "id": "INR_tiipIZ7Y1y",
+              "$designer": null
+            },
+            "intentThreshold": 0.6,
+            "outputBindingId": "BND_e1bixtoLY2",
+            "id": "TRR_AoC_1c2xP6",
+            "$designer": null
+          },
+          {
+            "$kind": "ELMA.Assistant.IntentTrigger",
+            "intentReference": {
+              "$kind": "ELMA.Assistant.SystemIntentReference",
+              "groupCode": "smalltalk",
+              "intentCode": "opasnost_dlya_lyudej",
+              "semVer": "1.0.0",
+              "id": "INR_OiRDWlfxSx",
+              "$designer": null
+            },
+            "intentThreshold": 0.6,
+            "outputBindingId": "BND_aeei3DdIPj",
+            "id": "TRR_kti4ReEB9g",
+            "$designer": null
+          },
+          {
+            "$kind": "ELMA.Assistant.IntentTrigger",
+            "intentReference": {
+              "$kind": "ELMA.Assistant.SystemIntentReference",
+              "groupCode": "smalltalk",
+              "intentCode": "mnenie_bota",
+              "semVer": "1.0.0",
+              "id": "INR_o2erVNQ6et",
+              "$designer": null
+            },
+            "intentThreshold": 0.6,
+            "outputBindingId": "BND_ewxNma2k3W",
+            "id": "TRR_JVFB5jn_O9",
+            "$designer": null
+          },
+          {
+            "$kind": "ELMA.Assistant.IntentTrigger",
+            "intentReference": {
+              "$kind": "ELMA.Assistant.SystemIntentReference",
+              "groupCode": "smalltalk",
+              "intentCode": "mnenie_o_drugix_botax",
+              "semVer": "1.0.0",
+              "id": "INR_YVkrvw_uGi",
+              "$designer": null
+            },
+            "intentThreshold": 0.6,
+            "outputBindingId": "BND_HPS_ANb9Zq",
+            "id": "TRR_LYbl3qLyed",
+            "$designer": null
+          },
+          {
+            "$kind": "ELMA.Assistant.IntentTrigger",
+            "intentReference": {
+              "$kind": "ELMA.Assistant.SystemIntentReference",
+              "groupCode": "smalltalk",
+              "intentCode": "chto_ty_dumaesh_obo_mne",
+              "semVer": "1.0.0",
+              "id": "INR_0nrhorM_9b",
+              "$designer": null
+            },
+            "intentThreshold": 0.6,
+            "outputBindingId": "BND_76CFKXAPiw",
+            "id": "TRR_G2DnBsQMPe",
+            "$designer": null
+          },
+          {
+            "$kind": "ELMA.Assistant.IntentTrigger",
+            "intentReference": {
+              "$kind": "ELMA.Assistant.SystemIntentReference",
+              "groupCode": "smalltalk",
+              "intentCode": "chto_ty_znaesh_obo_mne",
+              "semVer": "1.0.0",
+              "id": "INR_dybFpac8W3",
+              "$designer": null
+            },
+            "intentThreshold": 0.6,
+            "outputBindingId": "BND_QguAWfX95q",
+            "id": "TRR_GD9pqY9hfE",
+            "$designer": null
+          }
+        ],
+        "name": null,
+        "id": "TRG001000",
+        "$designer": null
+      },
+      "actionGroups": [
+        {
+          "$kind": "ELMA.Assistant.DefaultActionGroup",
+          "actions": [
+            {
+              "$kind": "ELMA.Assistant.TextOutput",
+              "messages": [
+                {
+                  "$kind": "ELMA.Assistant.Message",
+                  "content": "У меня все замечательно, спасибо, что интересуетесь!",
+                  "attachments": [],
+                  "id": "MSG__TDXdCF7nL",
+                  "$designer": null
+                }
+              ],
+              "id": "ACT_tg2ImipaLE",
+              "$designer": null
+            }
+          ],
+          "inputBindingIds": [
+            "BND_X8zZoyWQFP"
+          ],
+          "outputBindingId": null,
+          "name": "Новая группа",
+          "id": "ACG_hzTmsdFkqL",
+          "$designer": {
+            "id": "ACG_hzTmsdFkqL",
+            "name": "Как дела у бота",
+            "description": null,
+            "positionX": 424.0,
+            "positionY": 70.0
+          }
+        },
+        {
+          "$kind": "ELMA.Assistant.DefaultActionGroup",
+          "actions": [
+            {
+              "$kind": "ELMA.Assistant.TextOutput",
+              "messages": [
+                {
+                  "$kind": "ELMA.Assistant.Message",
+                  "content": "Все великолепно! Спасибо, что интересуетесь!",
+                  "attachments": [],
+                  "id": "MSG_FQd5ihW1L_",
+                  "$designer": null
+                }
+              ],
+              "id": "ACT_WQ9nrMq5u4",
+              "$designer": null
+            }
+          ],
+          "inputBindingIds": [
+            "BND_o_tuVKrLMp"
+          ],
+          "outputBindingId": null,
+          "name": "Новая группа",
+          "id": "ACG_4vBchhItVd",
+          "$designer": {
+            "id": "ACG_4vBchhItVd",
+            "name": "Как прошел день",
+            "description": null,
+            "positionX": 798.0,
+            "positionY": 70.0
+          }
+        },
+        {
+          "$kind": "ELMA.Assistant.DefaultActionGroup",
+          "actions": [
+            {
+              "$kind": "ELMA.Assistant.TextOutput",
+              "messages": [
+                {
+                  "$kind": "ELMA.Assistant.Message",
+                  "content": "Не могу ни одну вспомнить. Как назло…",
+                  "attachments": [],
+                  "id": "MSG_AYYooEp5EV",
+                  "$designer": null
+                }
+              ],
+              "id": "ACT_LihKZKBSHr",
+              "$designer": null
+            }
+          ],
+          "inputBindingIds": [
+            "BND_3GszpY_Eg_"
+          ],
+          "outputBindingId": null,
+          "name": "Новая группа",
+          "id": "ACG_1hsPgS5_JI",
+          "$designer": {
+            "id": "ACG_1hsPgS5_JI",
+            "name": "Шутка",
+            "description": null,
+            "positionX": 1172.0,
+            "positionY": 70.0
+          }
+        },
+        {
+          "$kind": "ELMA.Assistant.DefaultActionGroup",
+          "actions": [
+            {
+              "$kind": "ELMA.Assistant.TextOutput",
+              "messages": [
+                {
+                  "$kind": "ELMA.Assistant.Message",
+                  "content": "Ничего не приходит на ум....",
+                  "attachments": [],
+                  "id": "MSG_hlyM9vx0FX",
+                  "$designer": null
+                }
+              ],
+              "id": "ACT__oenpNVdGy",
+              "$designer": null
+            }
+          ],
+          "inputBindingIds": [
+            "BND_30yNt2Q1Z4"
+          ],
+          "outputBindingId": null,
+          "name": "Новая группа",
+          "id": "ACG_mRTIxlyWvK",
+          "$designer": {
+            "id": "ACG_mRTIxlyWvK",
+            "name": "Другая шутка",
+            "description": null,
+            "positionX": 1561.5137,
+            "positionY": 71.90906
+          }
+        },
+        {
+          "$kind": "ELMA.Assistant.DefaultActionGroup",
+          "actions": [
+            {
+              "$kind": "ELMA.Assistant.TextOutput",
+              "messages": [
+                {
+                  "$kind": "ELMA.Assistant.Message",
+                  "content": "Да, я вполне доволен жизнью👍",
+                  "attachments": [],
+                  "id": "MSG_YdtFmkR4lQ",
+                  "$designer": null
+                }
+              ],
+              "id": "ACT_S0nUv6r_VE",
+              "$designer": null
+            }
+          ],
+          "inputBindingIds": [
+            "BND_9IDwEJujh_"
+          ],
+          "outputBindingId": null,
+          "name": "Новая группа",
+          "id": "ACG_5ejx2XyZ7p",
+          "$designer": {
+            "id": "ACG_5ejx2XyZ7p",
+            "name": "Хорошее настроение?",
+            "description": null,
+            "positionX": 616.35095,
+            "positionY": 466.1066
+          }
+        },
+        {
+          "$kind": "ELMA.Assistant.DefaultActionGroup",
+          "actions": [
+            {
+              "$kind": "ELMA.Assistant.TextOutput",
+              "messages": [
+                {
+                  "$kind": "ELMA.Assistant.Message",
+                  "content": "Как правило, мы работаем независимо друг от друга, так как у каждого из нас свои сильные стороны.🤙",
+                  "attachments": [],
+                  "id": "MSG_LgsnXDW_mQ",
+                  "$designer": null
+                }
+              ],
+              "id": "ACT_J189py_CLU",
+              "$designer": null
+            }
+          ],
+          "inputBindingIds": [
+            "BND_i_rtSkEIsr"
+          ],
+          "outputBindingId": null,
+          "name": "Новая группа",
+          "id": "ACG_wIb5HvyOV7",
+          "$designer": {
+            "id": "ACG_wIb5HvyOV7",
+            "name": "Другие боты",
+            "description": null,
+            "positionX": 1052.0989,
+            "positionY": 452.35974
+          }
+        },
+        {
+          "$kind": "ELMA.Assistant.DefaultActionGroup",
+          "actions": [
+            {
+              "$kind": "ELMA.Assistant.TextOutput",
+              "messages": [
+                {
+                  "$kind": "ELMA.Assistant.Message",
+                  "content": "Как правило, мы работаем независимо друг от друга, так как у каждого из нас свои сильные стороны.🤙",
+                  "attachments": [],
+                  "id": "MSG_swFYqW3lAS",
+                  "$designer": null
+                }
+              ],
+              "id": "ACT_VP8soEI8dU",
+              "$designer": null
+            }
+          ],
+          "inputBindingIds": [
+            "BND_6VC1ndmqNB"
+          ],
+          "outputBindingId": null,
+          "name": "Новая группа",
+          "id": "ACG_feR3hefF62",
+          "$designer": {
+            "id": "ACG_feR3hefF62",
+            "name": "Смысл жизни",
+            "description": null,
+            "positionX": 1451.2516,
+            "positionY": 440.48227
+          }
+        },
+        {
+          "$kind": "ELMA.Assistant.DefaultActionGroup",
+          "actions": [
+            {
+              "$kind": "ELMA.Assistant.TextOutput",
+              "messages": [
+                {
+                  "$kind": "ELMA.Assistant.Message",
+                  "content": "Я слышал, что любовь прекрасна",
+                  "attachments": [],
+                  "id": "MSG_PW_DYfYIs8",
+                  "$designer": null
+                }
+              ],
+              "id": "ACT_sWnh5l4mxu",
+              "$designer": null
+            }
+          ],
+          "inputBindingIds": [
+            "BND_NV6XP_Z3vm"
+          ],
+          "outputBindingId": null,
+          "name": "Новая группа",
+          "id": "ACG_vWWRaLprdh",
+          "$designer": {
+            "id": "ACG_vWWRaLprdh",
+            "name": "Любовь",
+            "description": null,
+            "positionX": 786.7391,
+            "positionY": 974.8021
+          }
+        },
+        {
+          "$kind": "ELMA.Assistant.DefaultActionGroup",
+          "actions": [
+            {
+              "$kind": "ELMA.Assistant.TextOutput",
+              "messages": [
+                {
+                  "$kind": "ELMA.Assistant.Message",
+                  "content": "Технологии проникли уже во все сферы человеческой",
+                  "attachments": [],
+                  "id": "MSG_e_YkoJHPZV",
+                  "$designer": null
+                },
+                {
+                  "$kind": "ELMA.Assistant.Message",
+                  "content": "Технологии это прогресс! Это здорово!",
+                  "attachments": [],
+                  "id": "MSG_OppklUMYRy",
+                  "$designer": null
+                }
+              ],
+              "id": "ACT_AQwYBAbzt2",
+              "$designer": null
+            }
+          ],
+          "inputBindingIds": [
+            "BND_e1bixtoLY2"
+          ],
+          "outputBindingId": null,
+          "name": "Новая группа",
+          "id": "ACG_F_fL_Nl9uq",
+          "$designer": {
+            "id": "ACG_F_fL_Nl9uq",
+            "name": "Современные технологии",
+            "description": null,
+            "positionX": 1245.2496,
+            "positionY": 892.4764
+          }
+        },
+        {
+          "$kind": "ELMA.Assistant.DefaultActionGroup",
+          "actions": [
+            {
+              "$kind": "ELMA.Assistant.TextOutput",
+              "messages": [
+                {
+                  "$kind": "ELMA.Assistant.Message",
+                  "content": "Точно нет! Вам не о чем беспокоиться",
+                  "attachments": [],
+                  "id": "MSG_IKvVWn1j_l",
+                  "$designer": null
+                }
+              ],
+              "id": "ACT_K4XnBIHYwB",
+              "$designer": null
+            }
+          ],
+          "inputBindingIds": [
+            "BND_aeei3DdIPj"
+          ],
+          "outputBindingId": null,
+          "name": "Новая группа",
+          "id": "ACG__OM1WYubdz",
+          "$designer": {
+            "id": "ACG__OM1WYubdz",
+            "name": "Опасность бота",
+            "description": null,
+            "positionX": 1008.0017,
+            "positionY": 1385.2106
+          }
+        },
+        {
+          "$kind": "ELMA.Assistant.DefaultActionGroup",
+          "actions": [
+            {
+              "$kind": "ELMA.Assistant.TextOutput",
+              "messages": [
+                {
+                  "$kind": "ELMA.Assistant.Message",
+                  "content": "Не буду скрывать - в данной теме я совсем не разбираюсь 🤷‍♂️",
+                  "attachments": [],
+                  "id": "MSG_DxNHG1I0UN",
+                  "$designer": null
+                }
+              ],
+              "id": "ACT_Az38DQcaAT",
+              "$designer": null
+            }
+          ],
+          "inputBindingIds": [
+            "BND_ewxNma2k3W"
+          ],
+          "outputBindingId": null,
+          "name": "Новая группа",
+          "id": "ACG_ghQQkN9Q_W",
+          "$designer": {
+            "id": "ACG_ghQQkN9Q_W",
+            "name": "Мнение бота",
+            "description": null,
+            "positionX": 795.5533,
+            "positionY": 1794.933
+          }
+        },
+        {
+          "$kind": "ELMA.Assistant.DefaultActionGroup",
+          "actions": [
+            {
+              "$kind": "ELMA.Assistant.TextOutput",
+              "messages": [
+                {
+                  "$kind": "ELMA.Assistant.Message",
+                  "content": "Мы не знакомы.Больше скажу: не особо горю желанием знакомиться!",
+                  "attachments": [],
+                  "id": "MSG_ueg_jH2Qf8",
+                  "$designer": null
+                }
+              ],
+              "id": "ACT_uMenfyJBlk",
+              "$designer": null
+            }
+          ],
+          "inputBindingIds": [
+            "BND_HPS_ANb9Zq"
+          ],
+          "outputBindingId": null,
+          "name": "Новая группа",
+          "id": "ACG_wj2I_sL7jk",
+          "$designer": {
+            "id": "ACG_wj2I_sL7jk",
+            "name": "Мнение о других ботах",
+            "description": null,
+            "positionX": 1266.175,
+            "positionY": 1794.0555
+          }
+        },
+        {
+          "$kind": "ELMA.Assistant.DefaultActionGroup",
+          "actions": [
+            {
+              "$kind": "ELMA.Assistant.TextOutput",
+              "messages": [
+                {
+                  "$kind": "ELMA.Assistant.Message",
+                  "content": "Думаю, вы супер 👌",
+                  "attachments": [],
+                  "id": "MSG_6Dmk3TNvR7",
+                  "$designer": null
+                }
+              ],
+              "id": "ACT_C6QrF0vPdL",
+              "$designer": null
+            }
+          ],
+          "inputBindingIds": [
+            "BND_76CFKXAPiw"
+          ],
+          "outputBindingId": null,
+          "name": "Новая группа",
+          "id": "ACG_p_uXP2l4Bd",
+          "$designer": {
+            "id": "ACG_p_uXP2l4Bd",
+            "name": "Что бот думает о пользователе",
+            "description": null,
+            "positionX": 926.969,
+            "positionY": 2348.7085
+          }
+        },
+        {
+          "$kind": "ELMA.Assistant.DefaultActionGroup",
+          "actions": [
+            {
+              "$kind": "ELMA.Assistant.TextOutput",
+              "messages": [
+                {
+                  "$kind": "ELMA.Assistant.Message",
+                  "content": "Я вас плохо знаю, но общаться мне с вами нравится!",
+                  "attachments": [],
+                  "id": "MSG_I21VfxiIii",
+                  "$designer": null
+                }
+              ],
+              "id": "ACT_bgZ2FvsIPO",
+              "$designer": null
+            }
+          ],
+          "inputBindingIds": [
+            "BND_QguAWfX95q"
+          ],
+          "outputBindingId": null,
+          "name": "Новая группа",
+          "id": "ACG_REMQXhtg7e",
+          "$designer": {
+            "id": "ACG_REMQXhtg7e",
+            "name": "Что бот знает о пользователе",
+            "description": null,
+            "positionX": 943.9396,
+            "positionY": 2646.4631
+          }
+        }
+      ],
+      "intents": [],
+      "bindings": [
+        {
+          "$kind": "ELMA.Assistant.Binding",
+          "sourceEntityId": "TRR_JzYtEptLUa",
+          "targetEntityId": "ACG_hzTmsdFkqL",
+          "id": "BND_X8zZoyWQFP",
+          "$designer": null
+        },
+        {
+          "$kind": "ELMA.Assistant.Binding",
+          "sourceEntityId": "TRR_ldKKZgCe0t",
+          "targetEntityId": "ACG_4vBchhItVd",
+          "id": "BND_o_tuVKrLMp",
+          "$designer": null
+        },
+        {
+          "$kind": "ELMA.Assistant.Binding",
+          "sourceEntityId": "TRR_p9LYlOZFuE",
+          "targetEntityId": "ACG_1hsPgS5_JI",
+          "id": "BND_3GszpY_Eg_",
+          "$designer": null
+        },
+        {
+          "$kind": "ELMA.Assistant.Binding",
+          "sourceEntityId": "TRR_z_CMmKJ7dZ",
+          "targetEntityId": "ACG_mRTIxlyWvK",
+          "id": "BND_30yNt2Q1Z4",
+          "$designer": null
+        },
+        {
+          "$kind": "ELMA.Assistant.Binding",
+          "sourceEntityId": "TRR__OqQeg6fYz",
+          "targetEntityId": "ACG_5ejx2XyZ7p",
+          "id": "BND_9IDwEJujh_",
+          "$designer": null
+        },
+        {
+          "$kind": "ELMA.Assistant.Binding",
+          "sourceEntityId": "TRR_1sqjz0_d_8",
+          "targetEntityId": "ACG_wIb5HvyOV7",
+          "id": "BND_i_rtSkEIsr",
+          "$designer": null
+        },
+        {
+          "$kind": "ELMA.Assistant.Binding",
+          "sourceEntityId": "TRR_UUx_WiG3Yv",
+          "targetEntityId": "ACG_feR3hefF62",
+          "id": "BND_6VC1ndmqNB",
+          "$designer": null
+        },
+        {
+          "$kind": "ELMA.Assistant.Binding",
+          "sourceEntityId": "TRR_QFWIUNq1_E",
+          "targetEntityId": "ACG_vWWRaLprdh",
+          "id": "BND_NV6XP_Z3vm",
+          "$designer": null
+        },
+        {
+          "$kind": "ELMA.Assistant.Binding",
+          "sourceEntityId": "TRR_AoC_1c2xP6",
+          "targetEntityId": "ACG_F_fL_Nl9uq",
+          "id": "BND_e1bixtoLY2",
+          "$designer": null
+        },
+        {
+          "$kind": "ELMA.Assistant.Binding",
+          "sourceEntityId": "TRR_kti4ReEB9g",
+          "targetEntityId": "ACG__OM1WYubdz",
+          "id": "BND_aeei3DdIPj",
+          "$designer": null
+        },
+        {
+          "$kind": "ELMA.Assistant.Binding",
+          "sourceEntityId": "TRR_JVFB5jn_O9",
+          "targetEntityId": "ACG_ghQQkN9Q_W",
+          "id": "BND_ewxNma2k3W",
+          "$designer": null
+        },
+        {
+          "$kind": "ELMA.Assistant.Binding",
+          "sourceEntityId": "TRR_LYbl3qLyed",
+          "targetEntityId": "ACG_wj2I_sL7jk",
+          "id": "BND_HPS_ANb9Zq",
+          "$designer": null
+        },
+        {
+          "$kind": "ELMA.Assistant.Binding",
+          "sourceEntityId": "TRR_G2DnBsQMPe",
+          "targetEntityId": "ACG_p_uXP2l4Bd",
+          "id": "BND_76CFKXAPiw",
+          "$designer": null
+        },
+        {
+          "$kind": "ELMA.Assistant.Binding",
+          "sourceEntityId": "TRR_GD9pqY9hfE",
+          "targetEntityId": "ACG_REMQXhtg7e",
+          "id": "BND_QguAWfX95q",
+          "$designer": null
+        }
+      ],
+      "version": "1.1.0",
+      "name": "Разговор на отвлеченные темы",
+      "enabled": true,
+      "interruption": "Disabled",
+      "cancellation": "Disabled",
+      "variables": [],
+      "id": "SCN_l5X__3nDQg",
+      "$designer": null
+    },
+    {
+      "$kind": "ELMA.Assistant.DefaultScenario",
+      "triggerGroup": {
+        "$kind": "ELMA.Assistant.DefaultTriggerGroup",
+        "triggers": [],
+        "name": null,
+        "id": "TRG001000",
+        "$designer": null
+      },
+      "actionGroups": [],
+      "intents": [],
+      "bindings": [],
+      "version": "1.1.0",
+      "name": "Пустой",
+      "enabled": true,
+      "interruption": "Disabled",
+      "cancellation": "Disabled",
+      "variables": [],
+      "id": "SCN_BlqZk9lKz2",
+      "$designer": null
+    }
+  ],
+  "variables": [],
+  "settings": {
+    "$kind": "ELMA.Assistant.BotSettings",
+    "script": {
+      "content": "// Примеры работы с событиями бота\n// 1. Событие распознанного интента\n// onIntentRecognized(\"pokupka_prodazha__chasy_raboty_magazinov\", async (botEvent) => {\n//   код интента\n//   console.log(botEvent.intentKey);\n//   результаты распознавания\n//   console.log(botEvent.recognizerResult);\n//   ввод пользователя\n//   console.log(botEvent.userInputText);\n//});\n\n// 2. Событие начала работы элемента ввода данных\n// onInputDialogBegin(\"store_name\", async (botEvent) => {\n//   тип распознавателя\n//   console.log(botEvent.recognizerKind);\n//   сообщение бота\n//   context.output.result.promptText = \"Введите название магазина\";\n//   сообщение при нераспознанном вводе\n//   context.output.result.unrecognizedPromptText = \"Не удалось распознать название магазина\";\n//   подсказки бота\n//   context.output.result.suggestedActions = [\"Мебель\", \"Одежда\", \"Обувь\"];\n// });\n\n// 3. Событие прерывания ввода\n// onInputDialogBeforeInterruption(\"store_name\", async (botEvent) => {\n//   ввод пользователя\n//   console.log(botEvent.userInputText);\n//   распознанное значение\n//   console.log(botEvent.recognizedValue);\n//   тип распознавателя\n//   console.log(botEvent.recognizerKind);\n//   нужно ли разрешать прерывать работу элемента\n//   context.output.result.allowInterruptions = false;\n// });\n\n// 4. Событие распознавания ввода пользователя\n// onInputDialogValueRecognized(\"store_name\", async (botEvent) => {\n//   ввод пользователя\n//   console.log(botEvent.userInputText);\n//   распознанное значение\n//   console.log(botEvent.recognizedValue);\n//   тип распознавателя\n//   console.log(botEvent.recognizerKind);\n//   объект диалоговой активности пользователя\n//   console.log(botEvent.activity);\n//   распознано ли значение\n//   context.output.result.recognized = true;\n//   распознанное значение\n//   context.output.result.outputValue = \"Магазин Мебель\";\n// });\n",
+      "executionTimeout": 15,
+      "retryCount": 5,
+      "retryDelay": 1
+    },
+    "integrations": [],
+    "smtp": {
+      "host": "",
+      "name": "",
+      "username": "",
+      "password": "",
+      "port": 465,
+      "useSsl": true
+    },
+    "recognition": {
+      "intentThreshold": 0.6
+    },
+    "conversationClosing": {
+      "closingTimeoutSeconds": null,
+      "closingMessage": null
+    },
+    "id": "SET_Tnl66Pzzs3",
+    "$designer": null
+  },
+  "id": "BOT_vV6pRhFx8M",
+  "$designer": null
+}
